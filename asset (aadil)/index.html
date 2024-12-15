@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <link rel="icon" href="https://www.bisleri.com/images/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -15,12 +18,37 @@
     <header>
         <div class="header-top">
             <div class="header-loc">
-                <div>Jaipur</div>
+                <div class="down">Jaipur</div>
                 <button title="location">GO</button>
             </div>
+            <ul class="drop-down">
+                <li>Ahmedabad</li>
+                <li>Bangalore</li>
+                <li>Chandigarh</li>
+                <li>Chennai</li>
+                <li>Coimbatore</li>
+                <li>Delhi</li>
+                <li>Faridabad</li>
+                <li>Ghaziabad</li>
+                <li>Goa</li>
+                <li>Gurugram</li>
+                <li>Hyderabad</li>
+                <li>Jaipur</li>
+                <li>Kolkata</li>
+                <li>Ludhiana</li>
+                <li>Mumbai</li>
+                <li>Mysore</li>
+                <li>Navi Mumbai</li>
+                <li>Noida</li>
+                <li>Pondicherry</li>
+                <li>Pune</li>
+                <li>Sahibabad</li>
+                <li>Thane</li>
+                <li>Visakhapatnam</li>
+            </ul>
             <div class="header-info">
-                <a href=""><span class="phone"></span><span>1800 121 1007</span></a>
-                <a href=""><span class="email"></span><span>wecare@bisleri.co.in</span></a>
+                <a href="tel:1800 121 1007"><span class="phone"></span><span>1800 121 1007</span></a>
+                <a href="mailto:wecare@bisleri.co.in"><span class="email"></span><span>wecare@bisleri.co.in</span></a>
             </div>
         </div>
         <div class="header-bottom">
@@ -29,10 +57,74 @@
                 <nav>
                     <ul>
                         <li><a class="active" href="">Home</a></li>
-                        <li class="expend"><a href="">Greener Promise</a></li>
+                        <li class="expend greener-promise"><a href="">Greener Promise</a>
+                            <div class="greener-drop-down">
+                                <a href="https://www.bisleri.com/greenerPromise">
+                                    Bisleri Greener Promise
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="https://www.bisleri.com/greener-promise/sustainability-report-2021-22.pdf">Sustainability Report</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.bisleri.com/bottles-for-change">Bottles For Change</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.bisleri.com/rainwater-harvesting">Nayi Umeed</a>
+                                    </li>
+                                    <li>
+                                        <a class="font--size-16 font-family1 font--bold" href="https://www.bisleri.com/pdf/csr-policy.pdf" target="_blank" rel="noopener">CSR Policy</a>
+                                    </li>
+                                    <li>
+                                        <a class="font--size-16 font-family1 font--bold" href="https://www.bisleri.com/csr-annual-return" target="_blank" rel="noopener">CSR Annual Return</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
                         <li><a href="">Shop Products</a></li>
-                        <li class="expend"><a href="">Brands</a></li>
-                        <li class="expend"><a href="">News Room</a></li>
+                        <li class="expend brands">
+                            <a href="">Brands</a>
+                            <div class="brand-dropdown">
+                                <section>
+                                    <h3 class="h3-1">Bisleri</h3>
+                                    <ul>
+                                        <li><a href="https://www.bisleri.com/bisleri-packaged-drinking-water">Bisleri Packaged Drinking Water</a>
+                                        </li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h3 class="h3-2">Vedica</h3>
+                                    <ul>
+                                        <li><a href="https://www.bisleri.com/vedica">Vedica Himalayan Spring Water</a></li>
+                                        <li><a href="https://www.bisleri.com/vedica-in-glass">Vedica In Glass</a></li>
+                                        <li><a href="https://www.bisleri.com/vedica-in-glass">Vedica Sparkling Water</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h3 class="h3-3">Carbonated Soft Drinks</h3>
+                                    <ul>
+                                        <li><a href="https://www.bisleri.com/bisleri-soda">Bisleri Soda</a></li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </li>
+                        <li class="expend news-room">
+                            <a href="">News Room</a>
+                            <div class="news-room-drop-down">
+                                <span></span>
+                                <ul>
+                                    <li>
+                                        <a href="https://www.bisleri.com/press-release">Press Release</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.bisleri.com/news">News</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.bisleri.com/blogs">Blogs</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
                         <li><a href="">Subscription</a></li>
                         <li><a href="">UAE</a></li>
                         <li><a href="">Referral</a></li>
@@ -47,17 +139,370 @@
         </div>
     </header>
 
-    <button class="up-navigator" type="button" title="top"></button>
+    <div class="sliding-text-container">
+        <div class="sliding-text">
+            <span class="text-wrapper">Kindly refrain from sharing any information or clicking on any suspicious links. We advise against falling for such deceiving offers and report such people at once. Bisleri does not solicit payment for any recruitment/distributorship/dealership. Kindly refrain from sharing any information or clicking on any suspicious links. We advise against falling for such deceiving offers and report such people at once. Bisleri does not solicit payment for any recruitment/distributorship/dealership.</span>
+        </div>
+    </div>
+    
+    <div class="banner-container" id="banner-container">
+        <div class="banners" id="banners">
+            <div class="banner">
+                <img src="asset/bisleri-banner-home.webp" alt="Bisleri Banner" id="banner1">
+            </div>
+            <div class="banner">
+                <img src="asset/vedica-banner.webp" alt="Fizz Banner" id="banner2">
+            </div>
+            <div class="banner">
+                <img src="asset/fizz-banner.webp" alt="Vedica Banner" id="banner3">
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="button active" onclick="showBanner(0)">Bisleri Packaged Drinking Water</button>
+            <button class="button" onclick="showBanner(1)">Vedica - Himalayan Spring Water</button>
+            <button class="button" onclick="showBanner(2)">Carbonated Soft Drinks</button>
+        </div>
+    </div>
+
+    <button class="backtoup" type="button" title="top"></button>
+
     <div class="help-btn">
         <button type="button" title="chat with expert">Chat with Expert</button>
     </div>
-    
 
-
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="stat-wrapper">
+        <h3>Leading through Change</h3>
+        <p>Bringing a change in the mindset of every individual in the country</p>
+        <section>
+            <div class="img-div">
+                <img src="https://www.bisleri.com/images/bottles-change-ad.webp" alt="poster">
+            </div>
+            <div class="stat-div">
+                <div class="inner-div">
+                    <img src="https://www.bisleri.com/images/bisleri-bottles-change-green.webp" alt="bisleri-bottles-change">
+                    <div class="content">
+                        <p>Bottles for Change aims to create awareness that</p>
+                        <h5>USED PLASTIC IS NOT WASTE.</h5>
+                        <h5>IT HAS VALUE. IT IS RECYCLABLE.</h5>
+                    </div>
+                    <ul class="leading-numbers">
+                        <li>
+                          <span class="counts">9</span>
+                          <span class="text">Corporates enrolled in these 7 cities</span>
+                        </li>
+                        <li>
+                          <span class="counts">800</span>
+                          <span class="text">Housing Societies reached</span>
+                        </li>
+                        <li>
+                          <span class="counts">500</span>
+                          <span class="text">Corporates partnered/engaged</span>
+                        </li>
+                        <li>
+                          <span class="counts">400</span>
+                          <span class="text">Schools and Colleges reached</span>
+                        </li>
+                        <li>
+                          <span class="counts">500</span>
+                          <span class="text">Hotels and Restaurants reached</span>
+                        </li>
+                        <li>
+                          <span class="counts">600</span>
+                          <span class="text">Awareness Sessions/Workshops conducted</span>
+                        </li>
+                        <li>
+                          <span class="counts">6,00,000</span>
+                          <span class="text">Population reached</span>
+                        </li>
+                        <li>
+                          <span class="counts">6,500</span>
+                          <span class="text">Tonnes of plastic collected</span>
+                        </li>
+                    </ul>
+                    <div class="group-btn">
+                        <a href="https://www.bisleri.com/bottles-for-change#joinTheInitiative" class="btn-link">Join the initiative</a>
+                        <a href="https://www.bisleri.com/bottles-for-change" class="btn link">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
     
+    <div class="distributor-wrapper">
+        <section>
+            <h3>Spreading the Promise of Goodness</h3>
+            <p>Bringing a change in the mindset of every individual in the country</p>
+            <div class="feature-card-wrap">
+                <div class="feature-card" >
+                    <img src="https://www.bisleri.com/images/feature-01.webp" alt="product">
+                    <div class="feature-detail">
+                        <span class="counts">122</span>
+                        <span class="name">OPERATIONAL PLANTS</span>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <img src="https://www.bisleri.com/images/feature-02.webp" alt="product">
+                    <div class="feature-detail">
+                        <span class="counts">4500</span>
+                        <span class="name">DISTRIBUTORS</span>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <img src="https://www.bisleri.com/images/feature-03.webp" alt="product">
+                    <div class="feature-detail">
+                        <span class="counts">5000</span>
+                        <span class="name">Distribution Trucks</span>
+                    </div>
+                </div>
+            </div>
+            <p class="foot-p">A symbol of goodness, trust and purity, Bisleri has been a household
+                name for decades. A leader in its category, it is the most trusted brand of packaged drinking water in India. Having a
+                strong presence, with 122 operational plants (13 owned) and a strong distribution network of 4500
+                Distributors &amp; 5000 Distribution trucks across India &amp; neighbouring countries, Bisleri stands true to its
+                promise of providing safe, pure &amp; healthy water to consumers for the last 50 years.
+            </p>
+            <div class="group-btn">
+                <a href="https://www.bisleri.com/distributor" class="btn-link">Learn more</a>
+                <a href="https://www.bisleri.com/distributor#applyDistributor">Apply for distributorship</a>
+            </div>
+        </section>
+    </div>    
+
+    <div class="scroller">
+        <section>
+            <h2>Related Articles</h2>
+            <span><a href="https://www.bisleri.com/blogs">View all</a></span>
+            <div class="blogs">
+                <article>
+                    <img src="https://bisleri-shop-storage.s3.ap-south-1.amazonaws.com/posts/December2024/XmKSHRtEfa3JlAZTYdCG.jpg" alt="">
+                    <div>
+                        <h3>Top Methods to Purify Borewell Water at Home</h3>
+                        <p>Let us take a closer look at some of the symptoms of unclean borewell and the methods that can be used to purify the same.</p>
+                        <a href="https://www.bisleri.com/blogs/methods-to-purify-borewell-water">Read More</a>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="https://bisleri-shop-storage.s3.ap-south-1.amazonaws.com/posts/December2024/Qb8QNeYJ6eM2B062wUau.jpg" alt="">
+                    <div>
+                        <h3>Top 5 Water Purification Methods for Safe Drinking Water</h3>
+                        <p>Here are 5 methods of water purification that you can consider to ensure safe water consumption at home.</p>
+                        <a href="https://www.bisleri.com/blogs/water-purification-methods-for-safe-drinking-water">Read More</a>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="https://bisleri-shop-storage.s3.ap-south-1.amazonaws.com/posts/December2024/oUj8TIHA4YJcqd0lP7bJ.jpg" alt="">
+                    <div>
+                        <h3>Understanding TDS and its Role in Drinking Water</h3>
+                        <p>Water is the most critical resource issue of our lifetime and our children’s lifetime.</p>
+                        <a href="https://www.bisleri.com/blogs/understanding-tds-and-its-role-in-drinking-water">Read More</a>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="https://bisleri-shop-storage.s3.ap-south-1.amazonaws.com/posts/December2024/u7TrrEJmP8Q5a3wHU1AW.jpg" alt="">
+                    <div>
+                        <h3>Top Natural Methods to Purify Water at Home without Chemicals</h3>
+                        <p>Here are a few natural methods that you can use to purify water without any hassles.</p>
+                        <a href="https://www.bisleri.com/blogs/purify-water-at-home-without-chemicals">Read More</a>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="https://bisleri-shop-storage.s3.ap-south-1.amazonaws.com/posts/December2024/hMRyWA222ywj60aiCneE.jpg" alt="">
+                    <div>
+                        <h3>Why Should You Drink Water While Sitting?</h3>
+                        <p>Should you then drink water in a sitting position? That’s what we aim to explore in this article.</p>
+                        <a href="https://www.bisleri.com/blogs/why-should-you-drink-water-while-sitting">Read More</a>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="https://bisleri-shop-storage.s3.ap-south-1.amazonaws.com/posts/December2024/YGDW7eUC3VIb4mZHhx7u.jpg" alt="">
+                    <div>
+                        <h3>Cold Water vs. Warm Water- Which is Better for Your Health</h3>
+                        <p>In this article, we will go through the pros and cons of each, so that you are better informed.</p>
+                        <a href="https://www.bisleri.com/blogs/cold-water-vs-warm-water-which-is-better-for-health">Read More</a>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="https://bisleri-shop-storage.s3.ap-south-1.amazonaws.com/posts/December2024/YFFQr6N3kAauUEH4qvpZ.jpg" alt="">
+                    <div>
+                        <h3>Why Soda Water is a Refreshing Choice</h3>
+                        <p>Club soda is a fizzy, calorie-free drink, perfect as a mixer, for cooking, or as a refreshing beverage.</p>
+                        <a href="https://www.bisleri.com/blogs/why-soda-water-is-a-refreshing-choice">Read More</a>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="https://bisleri-shop-storage.s3.ap-south-1.amazonaws.com/posts/November2024/e3VMw5NgbPVAbXG9N9Ym.jpg" alt="">
+                    <div>
+                        <h3>Daily Water Intake: What's Right for You?</h3>
+                        <p>In this blog, we will discuss these aspects in detail and clarify some myths to help you remain informed and safe.</p>
+                        <a href="https://www.bisleri.com/blogs/how-much-water-should-you-drink-a-day">Read More</a>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="https://bisleri-shop-storage.s3.ap-south-1.amazonaws.com/posts/October2024/R63OJdrJwgjGboOfSfal.jpg" alt="">
+                    <div>
+                        <h3>The Top 15 Benefits of Drinking Warm Water</h3>
+                        <p>Discover how drinking warm water can improve digestion, boost hydration, and support overall health.</p>
+                        <a href="https://www.bisleri.com/blogs/15-benefits-of-drinking-warm-water">Read More</a>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="https://bisleri-shop-storage.s3.ap-south-1.amazonaws.com/posts/December2024/6IzDwsHss8BIe7P77VPe.jpg" alt="">
+                    <div>
+                        <h3>Exploring Different Types of Water: From Tap to Mineral and Beyond</h3>
+                        <p>Each type of water undergoes unique processes and contains different minerals and impurities, influencing its taste, safety.</p>
+                        <a href="https://www.bisleri.com/blogs/types-of-water-from-tap-to-mineral-and-beyond">Read More</a>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="https://bisleri-shop-storage.s3.ap-south-1.amazonaws.com/posts/October2024/Up62GsBFn6QOJ9Q0lM45.jpg" alt="">
+                    <div>
+                        <h3>The Health Risks of Drinking Water While Standing</h3>
+                        <p>Have you ever been cautioned by your elders or family members against drinking water</p>
+                        <a href="https://www.bisleri.com/blogs/the-health-risks-of-drinking-water-while-standing">Read More</a>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="https://bisleri-shop-storage.s3.ap-south-1.amazonaws.com/posts/August2024/xZ428UADvuFANr62EN2B.jpg" alt="">
+                    <div>
+                        <h3>The Health Benefits and Risks of Different Types of Water</h3>
+                        <p>There are several types of water, including mineral water, RO water, soft water, hard water, distilled water, freshwater, and salt water.</p>
+                        <a href="https://www.bisleri.com/blogs/the-health-benefits-and-risks-of-different-types-of-water">Read More</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </div>
+    
+    <div class="last-sec">
+        <section>
+            <h4>Bisleri Packaged Drinking Water</h4>
+            <p>When you think about packaged drinking water, what’s the first thing that comes to mind? Perhaps, a bottle with Bisleri packaging? Over time, Bisleri has become synonymous with packaged drinking water.</p>
+            
+            <p class="margin-top-10"><strong>Bisleri - Purified Packaged Drinking Water</strong><br>
+            Since its inception, the packaged drinking water company has ensured that utmost care and attention is given to the purification and packaging of water. A 10-step purification is in place to ensure that the water you get to enjoy is free of chemicals and rich in minerals! But today, it is more than just packaged drinking water. The brand has grown its family to include more incredible drinks such as Vedica, Soda, Pop, Spyci Jeera and Limonata.
+            </p>
+            
+            <p class="margin-top-10"><strong>Bisleri@Doorstep</strong><br>No need to search in shops for your choice of Bisleri drink! The packaged drinking water brand has its very online portal where you can place a one-time order or sign up for a regular subscription and have it delivered to your doorstep!
+            </p>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-cont">
+            <div class="pay-app">
+                <div class="pay">
+                    <h4>Secure Payments</h4>
+                    <ul>
+                        <li><img src="asset/visa.jpg" alt=""></li>
+                        <li><img src="asset/mastercard.jpg" alt=""></li>
+                        <li><img src="asset/paytm.jpg" alt=""></li>
+                        <li><img src="asset/maestro.jpg" alt=""></li>
+                        <li><img src="asset/norton.webp" alt=""></li>
+                        <li><img src="asset/mcafee.webp" alt=""></li>
+                    </ul>
+                </div>
+                <div class="apps">
+                    <h4>Our Apps:</h4>
+                    <ul>
+                        <li><img class="bisleri-bottles" src="asset/bisleri-bottles.webp" alt=""></li>
+                        <li><img class="android-btn" src="asset/android-btn.webp" alt=""></li>
+                        <li><img class="appstore-btn" src="asset/appstore-btn.webp" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lists">
+                <div>
+                    <ul>
+                        <li>About Us</li>
+                        <li><a href="https://www.bisleri.com/our-journey">Our Journey</a></li>
+                        <li><a href="https://www.bisleri.com/what-makes-us-stand-apart">What makes us Stand Apart</a></li>
+                        <li><a href="https://www.bisleri.com/90-quality-tests">90 Quality Tests</a></li>
+                        <li><a href="https://www.bisleri.com/promise-of-10">The Promise of 10</a></li>
+                        <li><a href="https://www.bisleri.com/vision-mission-values">Vision, Mission & Values</a></li>
+                        <li><a href="https://www.bisleri.com/team">Leadership Team</a></li>
+                        <li><a href="https://www.bisleri.com/career">Careers</a></li>
+                        <li><a href="https://www.bisleri.com/contact-us">Contact Us</a></li>
+                        <li><a href="https://www.bisleri.com/terms-conditions">Terms & Conditions</a></li>
+                        <li><a href="https://www.bisleri.com/cancel-refund-policy">Cancelation & Refund Policy</a></li>
+                        <li><a href="https://www.bisleri.com/faq">FAQs</a></li>
+                        <li><a href="https://www.bisleri.com/annual-return">Annual Return</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>Brands</li>
+                        <li><a href="https://www.bisleri.com/bisleri-packaged-drinking-water">Bisleri</a></li>
+                        <li><a href="https://www.bisleri.com/vedica">Vedica</a></li>
+                        <li><a href="https://www.bisleri.com/limonata">Limonata</a></li>
+                        <li><a href="https://www.bisleri.com/bisleri-soda">Bisleri Soda</a></li>
+                        <li><a href="https://www.bisleri.com/pop">Pop</a></li>
+                    </ul>
+                    <ul>
+                        <li>News Room</li>
+                        <li><a href="https://www.bisleri.com/press-release">Press Release</a></li>
+                        <li><a href="https://www.bisleri.com/news">News</a></li>
+                        <li><a href="https://www.bisleri.com/blogs">Blogs</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="https://www.bisleri.com/uae"><b>UAE</b></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>Become a Distributor</li>
+                        <li><a href="https://www.bisleri.com/distributor">Apply for Bisleri Dealership</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="https://www.bisleri.com/greenerPromise"><b>Greener Promise</b></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>Contact</li>
+                        <li>Bisleri International Pvt. Ltd.<br><br>
+                            CTS No. 525/1A/1, Western Express <br><br> 
+                            Highway,<br><br>
+                            Opp Hindustan Unilever, at Chakala <br><br> 
+                            Division,<br><br>
+                            Andheri (East), Mumbai – 400 099</li>
+                    </ul>
+                    <ul>
+                        <li class="email"><b>Email:</b> <a href="mailto:wecare@bisleri.co.in">wecare@bisleri.co.in</a></li>
+                        <li class="phone">Phone: <a href="tel:18001211007">1800-121-1007</a></li>
+                        <li class="time">8 AM to 8 PM</li>
+                        <li class="days">Monday to Saturday</li>
+                    </ul>
+                    <ul class="social-links">
+                        <li><a class="facebook" href="https://www.facebook.com/Bisleri/"></a></li>
+                        <li><a class="twitter" href="https://twitter.com/BisleriZone"></a></li>
+                        <li><a class="instagram" href="https://www.instagram.com/bislerizone/"></a></li>
+                        <li><a class="youtube" href="https://www.youtube.com/user/BisleriIndia"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright">
+                <div class="copyright-text"><p>© COPYRIGHTS 2020-21</p></div>
+                <div class="base-links">
+                    <a href="https://payments.billdesk.com/MercOnline/BisleriController" title="Online Payment">Online Payment</a>
+                    <a href="https://www.bisleri.com/compliance" title="Compliance">Compliance</a>
+                    <a href="https://www.bisleri.com/privacy-policy" title="Privacy Policy">Privacy Policy</a>
+                    <a href="https://www.bisleri.com/cookies-policy" title="Cookie Policy">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+<script src="index.js"></script>
 </html>
