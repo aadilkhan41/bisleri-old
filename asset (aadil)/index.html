@@ -132,8 +132,33 @@
                 </nav>
             </div>
             <div class="header-right">
-                <button class="search" type="button" title="search"></button>
+                <button class="search" type="button" title="search" onclick="renderSearchBar()"></button>
+                <div class="search-bar-panel">
+                    <div>
+                        <button class="close-panel" onclick="hideSearchBar()">Close</button>
+                        <h2>What are you looking for?</h2>
+                        <div class="search-bar">
+                            <div class="search-wraper">
+                                <input type="text" name="search-bar" placeholder="Type here">
+                                <button type="button">Search</button>
+                            </div>
+                        </div>
+                        <div class="top-brands">
+                            <p>Top brands</p>
+                            <div>
+                                <label>Bisleri Mineral Water</label>
+                                <label>Vedica - Himalayan Spring Water</label>
+                                <label>Hand Purifiers</label>
+                                <label>Merchandise</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <button class="login" type="button" title="login"></button>
+                <ul class="login-drop-down">
+                    <li><a href="https://www.bisleri.com/login">Login</a></li>
+                    <li><a href="https://www.bisleri.com/signup">Register</a></li>
+                </ul>
                 <button class="cart" type="button" title="cart"></button>
             </div>
         </div>

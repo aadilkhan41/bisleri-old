@@ -84,3 +84,11 @@ let bannerHeight = 0;
             toggleButton.classList.add("down");
         }
     });
+
+    function renderSearchBar(){
+        document.querySelector(".search-bar-panel").style.display = "flex";
+    }
+
+    function hideSearchBar(){
+        document.querySelector(".search-bar-panel").style.display = "none";
+    }
