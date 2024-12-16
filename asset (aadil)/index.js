@@ -22,7 +22,11 @@ function renderwater(id){
     }
 }
 
-
+window.addEventListener("load", function () {
+    // Select the loader and hide it
+    const loader = document.getElementById("loader");
+    loader.style.display = "none";
+});
 
 
 
