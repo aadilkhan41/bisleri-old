@@ -6,7 +6,8 @@
 
 body{
     margin-bottom: 20px;
-    padding-top: 114px;background: linear-gradient(90deg, #eefbff 0, #f6fcff);
+    padding-top: 114px;
+    background: linear-gradient(90deg, #eefbff 0, #f6fcff);
 }
 
 ::-webkit-scrollbar{
@@ -359,16 +360,228 @@ main .main-1200px{
 }
 
 .login-top h1{
+    color: #333333;
     font: 500 1.875em "Work Sans";
 }
 
 .login-top h5{
+    color: #333333;
     font: 500 1.125em "Work Sans";
     background-color: #e4f9ff;
     padding: 10px 20px;
     border-radius: 30px;
     text-align: center;
 }
+
+.login-top h5 a{
+    color: #1d5c49;
+}
+
+.login-panel{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px 0;
+    box-shadow: 0 0 16px rgba(0, 0, 0, .1);
+}
+
+.login-panel h3{
+    color: #333333;
+    font: 600 1.5em "Work Sans";
+    margin-bottom: 8px;
+}
+
+.login-panel .inputs{
+    width: 100%;
+    display: flex;
+}
+
+.login-panel .form-group, .login-panel .buttons section{
+    width: 33.333333333%;
+    margin: 0 50px 30px 0;
+}
+
+.login-panel .inputs input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 13px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+}
+
+.form-group label {
+    position: relative;
+    display: block;
+    margin-top: 20px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    font-size: 16px;
+}
+
+.form-group input:focus {
+    border-color: gray;
+}
+
+.form-group span {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    font-size: 16px;
+    color: #333;
+    transition: 0.3s ease;
+    pointer-events: none;
+    font: 500 1.125em "Work Sans";
+}
+
+.form-group input:focus + span,
+.form-group input:not(:placeholder-shown) + span {
+    top: -10px;
+    left: 8px;
+    font-size: 12px;
+    color: #333;
+    padding: 0 5px;
+    background-color: white;
+}
+
+
+
+
+
+
+
+.login-panel .buttons{
+    display: flex;
+}
+
+.login-panel .buttons button{
+    color: #d0d0d0;
+    font-size: 1.125em;
+    font-weight: 700;
+    border-radius: 23px;
+    padding: 10px 30px;
+    display: inline-block;
+    border-color: #00645b;
+    background-color: #00645b;
+    border: 1px solid transparent;
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+}
+
+.login-panel .buttons button:hover{
+    color: #000;
+    border-color: #00645b;
+    background-color: white;
+}
+
+.login-panel .buttons a{
+    color: #00645b;
+    font-size: 1.125em;
+    font-weight: 700;
+    border-radius: 23px;
+    padding: 10px 30px 10px 0px;
+    display: inline-block;
+    border: 1px solid transparent;
+    transition: all 0.5s ease-out;
+}
+
+.login-panel .buttons a:hover{
+    color: #000;
+    padding: 10px 30px;
+    border-color: #00645b;
+    background-color: white;
+}
+
+.social-buttons{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.social-buttons button{
+    width: 320px;
+    font: 700 1.6em "Work Sans";
+    border-radius: 23px;
+    padding: 10px 30px;
+    font-size: 1.125em;
+    margin-right: 40px;
+    background-color: white;
+    background-image: url("https://www.bisleri.com/images/google.webp");
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    background-size: 35px;
+}
+
+.social-buttons .facebook{
+    background-image: url("https://www.bisleri.com/images/facebook.webp");
+    border: 2px solid #4267b2;
+    color: #4267b2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.second-footer ul{
+    list-style: none;
+    display: flex;
+}
+
+.second-footer li{
+    display: flex;
+    margin-right: 50px;
+}
+
+.second-footer span{
+    font-weight: 500;
+    color: #333333;
+}
+
+.delivery img{
+    width: 45px;
+    height: 35px;
+}
+
+.delivery span{
+    padding: 8px 20px;
+}
+
+.quality img{
+    width: 35px;
+    height: 35px;
+}
+
+.quality span{
+    padding: 7px 20px;
+}
+
+.secured img{
+    width: 35px;
+    height: 35px;
+}
+
+.secured span{
+    padding: 7px 20px;
+}
+
+
 
 
 
@@ -447,5 +660,36 @@ footer .footer-help{
     font: 700 1.125em "Work Sans";
     color: #333333;
     text-decoration: none;
+}
+
+
+@media screen and (max-width: 770px) {
+    footer ul i{
+        width: 50px;
+        height: 35px;
+        background-size: 52px 35px;
+    }
+
+    footer ul img{
+        width: 50px;
+    }
+
+    .footer-cont{
+        flex-direction: column;
+    }
+    
+    .footer-cont ul{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    footer .footer-help{
+        width: 100%;
+        font-size: 14px;
+        text-align: center;
+    }
 }
 
