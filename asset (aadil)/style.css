@@ -513,6 +513,20 @@ nav li a{
     background-size: 20px 20px;
 }
 
+.empty-cart-msg{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 2;
+    font-weight: 600;
+    box-sizing: border-box;
+    transition: all 0.5s ease-out;
+    background-color: #ffe667;
+}
+
 
 
 

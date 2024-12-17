@@ -253,7 +253,7 @@ header{
     width: 150px;
     top: 100%;
     display: none;
-    margin-top: -24px;
+    margin-top: -15px;
     margin-left: -100px;
     flex-direction: column;
     position: absolute;
@@ -401,6 +401,21 @@ main .main-1200px{
     margin: 0 50px 30px 0;
 }
 
+.login-panel .form-group p{
+    float: right;
+    font-size: 14px;
+    color: #9a9a9a !important;
+    padding: 2px;
+    margin: 0;
+}
+
+.form-group .dob{
+    background-image: url("asset/cal.jpg");
+    background-position: calc(100% - 15px) center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+
 .login-panel .inputs input{
     width: 100%;
     box-sizing: border-box;
@@ -447,6 +462,12 @@ main .main-1200px{
     color: #333;
     padding: 0 5px;
     background-color: white;
+}
+
+.form-wrapper .text{
+    color: #333333;
+    font: 500 1.125em 'Work Sans';
+    margin-bottom: 30px;
 }
 
 .login-panel .buttons{
@@ -761,6 +782,16 @@ footer .footer-help{
         top: 13px;
     }
 
+    .login-panel .form-group p{
+        font-size: 11px;
+    }
+
+    .form-wrapper .text{
+        font-size: 14px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
     .buttons section{
         width: 100% !important;
         margin: 20px 0 0 0 !important;
@@ -880,4 +911,3 @@ footer .footer-help{
         background-size: 15px;
     }
 }
-

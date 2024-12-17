@@ -1,3 +1,18 @@
+function emptyCart(){
+    document.querySelector('.empty-cart-msg').style.top = "135px";
+
+    setTimeout(() => {
+        document.querySelector('.empty-cart-msg').style.top = "0";
+    }, 1000);
+}
+
+
+
+function hideAppAd(){
+    document.querySelector(".app-ad").style.display = "none";
+    document.querySelector("header").style.top = "0px";
+}
+
 function renderwater(id){
     let obj1 = document.querySelector(".bisleri-water-panel");
     let obj2 = document.querySelector(".vedica-water-panel");
@@ -23,7 +38,6 @@ function renderwater(id){
 }
 
 window.addEventListener("load", function () {
-    // Select the loader and hide it
     const loader = document.getElementById("loader");
     loader.style.display = "none";
 });
