@@ -74,7 +74,7 @@
         <div class="header-bottom">
             <div class="header-left">
                 <div class="logo">
-                    <input class="menu" type="button" title="menu">
+                    <input class="menu" type="button" title="menu" onclick="renderPhoneMenu()">
                     <a href="index.html">
                         <img src="https://www.bisleri.com/images/logo.webp" alt="Bisleri">
                     </a>
@@ -83,15 +83,11 @@
                     <ul>
                         <li><a class="active" href="">Home</a></li>
                         <li class="expend greener-promise"><a href="">Greener Promise</a>
-                            <div class="greener-drop-down">
-                                <a href="https://www.bisleri.com/greenerPromise">
-                                    Bisleri Greener Promise
-                                </a>
+                        <div class="greener-drop-down">
+                            <a href="https://www.bisleri.com/greenerPromise">Bisleri Greener Promise</a>
                                 <ul>
                                     <li>
-                                        <a
-                                            href="https://www.bisleri.com/greener-promise/sustainability-report-2021-22.pdf">Sustainability
-                                            Report</a>
+                                        <a href="https://www.bisleri.com/greener-promise/sustainability-report-2021-22.pdf">Sustainability Report</a>
                                     </li>
                                     <li>
                                         <a href="https://www.bisleri.com/bottles-for-change">Bottles For Change</a>
@@ -100,14 +96,10 @@
                                         <a href="https://www.bisleri.com/rainwater-harvesting">Nayi Umeed</a>
                                     </li>
                                     <li>
-                                        <a class="font--size-16 font-family1 font--bold"
-                                            href="https://www.bisleri.com/pdf/csr-policy.pdf" target="_blank"
-                                            rel="noopener">CSR Policy</a>
+                                        <a class="font--size-16 font-family1 font--bold" href="https://www.bisleri.com/pdf/csr-policy.pdf" target="_blank" rel="noopener">CSR Policy</a>
                                     </li>
                                     <li>
-                                        <a class="font--size-16 font-family1 font--bold"
-                                            href="https://www.bisleri.com/csr-annual-return" target="_blank"
-                                            rel="noopener">CSR Annual Return</a>
+                                        <a class="font--size-16 font-family1 font--bold" href="https://www.bisleri.com/csr-annual-return" target="_blank" rel="noopener">CSR Annual Return</a>
                                     </li>
                                 </ul>
                             </div>
@@ -198,6 +190,63 @@
             </div>
         </div>
     </header>
+
+    <div class="phone-menu">
+        <div class="list-cont">
+            <ul class="log-reg">
+                <li><a class="menu-links" href="login.html">Login</a></li>
+                <li><a href="signup.html">Register</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <p class="exp" onclick="renderSubMenu('exp-menu-1')">Greener Promise</p>
+                    <div class="exp-menu exp-menu-1">
+                        <ul>
+                            <li onclick="hideSubMenu('exp-menu-1')"><p><b>Back</b></p></li>
+                            <li><a href="">Bisleri Greener Promise</a></li>
+                            <li><a href="https://www.bisleri.com/greener-promise/sustainability-report-2021-22.pdf">Sustainability report</a></li>
+                            <li><a href="">Bottles For Change</a></li>
+                            <li><a href="">Nayi Umeed</a></li>
+                            <li><a href="https://www.bisleri.com/pdf/csr-policy.pdf">CSR Policy</a></li>
+                            <li><a href="">CSR Annual Return</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">Shop Products</a></li>
+                <li>
+                    <p class="exp" onclick="renderSubMenu('exp-menu-2')">Brands</p>
+                    <div class="exp-menu exp-menu-2">
+                        <ul>
+                            <li onclick="hideSubMenu('exp-menu-2')"><p><b>Back</b></p></li>
+                            <li><a href="">Bisleri Packed Drinking Water</a></li>
+                            <li><a href="">Vedica Himalayan Spring Water</a></li>
+                            <li><a href="">Vedica In Glass</a></li>
+                            <li><a href="">Vedica Spakling Water</a></li>
+                            <li><a href="">Bisleri Soda</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <p class="exp" onclick="renderSubMenu('exp-menu-3')">News Room</p>
+                    <div class="exp-menu exp-menu-3">
+                        <ul>
+                            <li onclick="hideSubMenu('exp-menu-3')"><p><b>Back</b></p></li>
+                            <li><a href="">Press Release</a></li>
+                            <li><a href="">News</a></li>
+                            <li><a href="">Blogs</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">Subscription</a></li>
+                <li><a href="">UAE</a></li>
+            </ul>
+            <section>
+                <a class="phone" href="tel:1800 121 1007">1800 121 1007</a>
+                <a class="email" href="mailto:wecare@bisleri.co.in">wecare@bisleri.co.in</a>
+            </section>
+        </div>
+        <div class="close-menu-div"><button class="close-menu" title="close-menu" onclick="hidePhoneMenu()"></button></div>
+    </div>
 
     <div class="sliding-text-container">
         <div class="sliding-text">

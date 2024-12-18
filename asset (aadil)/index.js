@@ -1,3 +1,25 @@
+function renderPhoneMenu(){
+    document.querySelector(".phone-menu").style.left = "0";
+    document.querySelector(".phone-menu").style.width = "100%";
+}
+
+function hidePhoneMenu(){
+    document.querySelector(".phone-menu").style.left = "-50px";
+    document.querySelector(".phone-menu").style.width = "0%";
+}
+
+function renderSubMenu(className){
+    document.querySelector("."+className).style.display = "block";
+}
+
+function hideSubMenu(className){
+    document.querySelector("."+className).style.display = "none";
+}
+
+
+
+
+
 function emptyCart(){
     document.querySelector('.empty-cart-msg').style.top = "135px";
 
