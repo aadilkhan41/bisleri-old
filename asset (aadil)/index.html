@@ -20,6 +20,17 @@
         <img src="asset/loader.gif" alt="Loading...">
     </div>
 
+    <div class="app-ad">
+        <div class="app-ad-wrap">
+            <i onclick="hideAppAd()"></i>
+            <a href="index.html"><img src="https://www.bisleri.com/images/bisleri-icon.webp" alt="Bisleri"></a>
+            <h4>Value Deals on Bisleri app</h4>
+        </div>
+        <span class="use-app-link">
+            <a href="#">Use App</a>
+        </span>
+    </div>
+
     <div class="empty-cart-msg">
         <p>There is no product added in the cart</p>
     </div>
@@ -63,6 +74,7 @@
         <div class="header-bottom">
             <div class="header-left">
                 <div class="logo">
+                    <input class="menu" type="button" title="menu">
                     <a href="index.html">
                         <img src="https://www.bisleri.com/images/logo.webp" alt="Bisleri">
                     </a>
@@ -154,6 +166,7 @@
                 </nav>
             </div>
             <div class="header-right">
+                <span>Jaipur</span>
                 <button class="search" type="button" title="search" onclick="renderSearchBar()"></button>
                 <div class="search-bar-panel">
                     <div>
@@ -198,21 +211,21 @@
     </div>
 
     <div class="banner-container" id="banner-container">
-        <div class="banners" id="banners">
-            <div class="banner">
-                <img src="asset/bisleri-banner-home.webp" alt="Bisleri Banner" id="banner1">
+        <div class='banners' id='banners'>
+            <div class='banner'>
+                <img src='asset/bisleri-banner-home.webp' alt='Bisleri Banner' id='banner1'>
             </div>
-            <div class="banner">
-                <img src="asset/vedica-banner.webp" alt="Fizz Banner" id="banner2">
+            <div class='banner'>
+                <img src='asset/vedica-banner.webp' alt='Fizz Banner' id='banner2'>
             </div>
-            <div class="banner">
-                <img src="asset/fizz-banner.webp" alt="Vedica Banner" id="banner3">
+            <div class='banner'>
+                <img src='asset/fizz-banner.webp' alt='Vedica Banner' id='banner3'>
             </div>
         </div>
-        <div class="buttons">
-            <button class="button active" onclick="showBanner(0)">Bisleri Packaged Drinking Water</button>
-            <button class="button" onclick="showBanner(1)">Vedica - Himalayan Spring Water</button>
-            <button class="button" onclick="showBanner(2)">Carbonated Soft Drinks</button>
+        <div class='buttons'>
+            <button class='button active' onclick='showBanner(0)'>Bisleri Packaged Drinking Water</button>
+            <button class='button' onclick='showBanner(1)'>Vedica - Himalayan Spring Water</button>
+            <button class='button' onclick='showBanner(2)'>Carbonated Soft Drinks</button>
         </div>
     </div>
 
@@ -238,7 +251,8 @@
                 <div class="brand-trust">
                     <div class="bisleri-water-panel">
                         <div class="brand-trust-img">
-                            <img src="https://www.bisleri.com/images/home-banner-slider/our-brand-copy.webp" alt="banner">
+                            <img class="desktop" src="https://www.bisleri.com/images/home-banner-slider/our-brand-copy.webp" alt="banner">
+                            <img class="phone" src="https://www.bisleri.com/images/home-banner-slider/our-brand-mob.webp" alt="banner">
                         </div>
                         <div class="brand-trust-op">
                             <div class="bottom-png">
@@ -269,7 +283,8 @@
 
                     <div class="vedica-water-panel">
                         <div class="brand-trust-img">
-                            <img src="https://www.bisleri.com/images/our-brands-vedica.webp" alt="banner">
+                            <img class="desktop" src="https://www.bisleri.com/images/our-brands-vedica.webp" alt="banner">
+                            <img class="phone" src="https://www.bisleri.com/images/our-brands-vedika-mobile.webp" alt="banner">
                         </div>
                         <div class="brand-trust-op">
                             <div class="bottom-png">
@@ -298,7 +313,8 @@
 
                     <div class="fizzy-drinks-panel">
                         <div class="brand-trust-img">
-                            <img src="https://www.bisleri.com/images/new-our-brands-fizzy.webp" alt="banner">
+                            <img class="desktop" src="https://www.bisleri.com/images/new-our-brands-fizzy.webp" alt="banner">
+                            <img class="phone" src="https://www.bisleri.com/images/new-our-brands-fizzy-mobile.webp" alt="banner">
                         </div>
                         <div class="brand-trust-op">
                             <div class="bottom-png">
@@ -364,7 +380,8 @@
         <p>Bringing a change in the mindset of every individual in the country</p>
         <section>
             <div class="img-div">
-                <img src="https://www.bisleri.com/images/bottles-change-ad.webp" alt="poster">
+                <img class="desktop" src="https://www.bisleri.com/images/bottles-change-ad.webp" alt="poster">
+                <img class="phone" src="https://www.bisleri.com/images/bottles-change-ad-mobile.webp" alt="poster">
             </div>
             <div class="stat-div">
                 <div class="inner-div">
@@ -464,7 +481,7 @@
     <div class="scroller">
         <section>
             <h2>Related Articles</h2>
-            <span><a href="https://www.bisleri.com/blogs">View all</a></span>
+            <span class="view-top"><a href="https://www.bisleri.com/blogs">View all</a></span>
             <div class="blogs">
                 <article>
                     <img src="https://bisleri-shop-storage.s3.ap-south-1.amazonaws.com/posts/December2024/XmKSHRtEfa3JlAZTYdCG.jpg"
@@ -602,6 +619,7 @@
                     </div>
                 </article>
             </div>
+            <span class="view-bottom"><a href="https://www.bisleri.com/blogs">View all</a></span>
         </section>
     </div>
 
@@ -661,8 +679,7 @@
                     <ul>
                         <li>About Us</li>
                         <li><a href="https://www.bisleri.com/our-journey">Our Journey</a></li>
-                        <li><a href="https://www.bisleri.com/what-makes-us-stand-apart">What makes us Stand Apart</a>
-                        </li>
+                        <li><a href="https://www.bisleri.com/what-makes-us-stand-apart">What makes us Stand Apart</a></li>
                         <li><a href="https://www.bisleri.com/90-quality-tests">90 Quality Tests</a></li>
                         <li><a href="https://www.bisleri.com/promise-of-10">The Promise of 10</a></li>
                         <li><a href="https://www.bisleri.com/vision-mission-values">Vision, Mission & Values</a></li>

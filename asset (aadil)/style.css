@@ -32,6 +32,21 @@ body{
     height: auto;
 }
 
+
+
+
+
+.app-ad{
+    display: none;
+}
+
+
+
+
+
+
+
+
 header{
     width: 100%;
     position: fixed;
@@ -361,10 +376,11 @@ nav li a{
     padding: 30px;
     display: none;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    z-index: 6;
     box-sizing: border-box;
     background-color: white;
 }
@@ -422,8 +438,11 @@ nav li a{
 }
 
 .search-wraper button{
+    width: 100px !important;
+    height: 100% !important;
     color: #d0d0d0;
-    margin-left: -8px;
+    margin: 0px !important;
+    margin-left: -8px !important;
     border-radius: 8px;
     padding: 15px 25px;
     font: 500 1em "Work Sans";
@@ -528,6 +547,14 @@ nav li a{
     background-color: #ffe667;
 }
 
+header .logo .menu{
+    display: none;
+}
+
+header .header-right span{
+    display: none;
+}
+
 @media screen and (max-width: 1149px) {
     header nav{
         display: none;
@@ -590,6 +617,17 @@ nav li a{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 .banner-container {
     position: relative;
     width: 100%;
@@ -630,15 +668,17 @@ nav li a{
     color: white;
     font-family: "Work Sans";
     border: none;
-    border-bottom: 2px solid rgba(0,0,0,0);
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
     cursor: pointer;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .button:hover, .button.active {
     font-weight: 600;
     border-bottom: 3px solid white;
 }
+
+
 
 
 
@@ -842,7 +882,14 @@ html {
 
 .brand-trust-img img{
     width: 100%;
+}
+
+.brand-trust-img .desktop{
     display: block;
+}
+
+.brand-trust-img .phone{
+    display: none;
 }
 
 .brand-trust-op{
@@ -991,6 +1038,14 @@ html {
     margin: 50px 0;
     display: flex;
     background-color: #bbfff5;
+}
+
+.desktop{
+    display: block;
+}
+
+.phone{
+    display: none;
 }
 
 .stat-wrapper .img-div{
@@ -1319,6 +1374,20 @@ html {
     padding: 10px 30px;
     border-color: #00645b;
     background-color: white;
+}
+
+.view-top{
+    display: block;
+}
+
+.view-bottom{
+    width: 100%;
+    display: none;
+    justify-content: center;
+}
+
+.view-bottom a{
+    padding: 0;
 }
 
 .scroller .blogs{
@@ -1668,4 +1737,611 @@ footer{
         font-size: 8px;
         background-size: 15px;
     }    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+    .app-ad{
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 5;
+        position: fixed;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        background-color: #c0edfa;
+        justify-content: space-between;
+    }
+
+
+
+
+
+
+
+
+    header{
+        top: 72px;
+        padding: 15px 20px;
+        box-sizing: border-box;
+    }
+
+    header .header-top{
+        display: none;
+    }
+
+    header .header-bottom{
+        padding: 0;
+    }
+
+    header .logo{
+        display: flex;
+        margin: 0;
+    }
+
+    header .logo .menu{
+        width: 40px;
+        display: block;
+        border: none;
+        outline: none;
+        background-image: url("asset/menu.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 35px 35px;
+    }
+
+    header .logo img{
+        width: 80%;
+    }
+
+    header .header-right{
+        margin-right: -5px;
+    }
+
+    header .header-right span{
+        display: block;
+        font-size: 12px;
+        padding: 10px 0;
+    }
+
+    header .header-right .login{
+        display: none;
+    }
+
+    header .header-right button{
+        width: 25px;
+        height: 25px;
+        margin: 5px 0 0 20px;
+        background-size: 18px 18px !important;
+    }
+
+
+
+    
+
+    .search-bar-panel{
+        display: flex;
+        padding: 50px 0;
+    }
+
+    .search-bar-panel div{
+        width: 100% !important;
+    }
+
+    .search-bar-panel h2{
+        font-size: 23px;
+    }
+
+    .search-bar-panel .close-panel{
+        top: 12px;
+        right: 50px;
+        padding-left: 25px;
+        font-size: 12px;
+    }
+
+    .search-wraper{
+        margin-top: 20px !important;
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .search-wraper input{
+        font-size: 12px;
+    }
+
+    .search-wraper button{
+        font-size: 12px;
+    }
+
+    .top-brands{
+        margin: 0px !important;
+    }
+
+    .top-brands p{
+        font-size: 14px;
+    }
+
+    .top-brands div{
+        width: 300px !important;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    .top-brands label{
+        margin-bottom: 15px;
+        font-size: 10px;
+    }
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    .brand-trust-cont h3{
+        font-size: 21px;
+    }
+
+    .brand-trust-cont p{
+        font-size: 12px;
+    }
+
+    .brand-trust-panel{
+        flex-direction: column;
+    }
+
+    .brand-trust-panel ul{
+        width: 100%;
+        display: flex;
+        overflow-x: scroll;
+        flex-direction: row;
+    }
+
+    .brand-trust-panel li{
+        width: 200px;
+    }
+
+    .bisleri-water-panel, .vedica-water-panel, .fizzy-drinks-panel{
+        flex-direction: column;
+    }
+
+    .brand-trust-img{
+        width: 100%;
+    }
+
+    .brand-trust-img .desktop{
+        display: none;
+    }
+
+    .brand-trust-img .phone{
+        display: block;
+    }
+
+    .brand-trust-op{
+        width: 100%;
+        padding: 30px;
+        margin: 0;
+        margin-top: -80px;
+        box-sizing: border-box;
+    }
+
+    .brand-trust-op .svg{
+        display: none;
+    }
+
+    .brand-trust-op h5{
+        font-size: 18px;
+    }
+
+    .brand-trust-op h4, .brand-trust-op p, .brand-trust-op a{
+        font-size: 14px;
+    }
+
+    .brand-trust-op ul{
+        flex-direction: column;
+    }
+
+    .brand-trust-op ul li{
+        width: 100%;
+    }
+
+    .brand-trust-op ul h6{
+        font-size: 19px !important;
+    }
+
+    .brand-trust-op ul p{
+        font-size: 16px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    .bottom-png{
+        width: 230px;
+        right: 0;
+        left: auto;
+        bottom: 85%;
+    }
+
+    .bottom-png img{
+        z-index: 2;
+        position: relative;
+    }
+    
+
+
+
+
+
+
+
+
+
+    .banners {
+        flex-direction: row;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        height: auto;
+    }
+
+    .banner {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .buttons {
+        bottom: 9px;
+        background-color: rgba(0,0,0,0);
+    }
+
+    .button {
+        font-size: 0;
+        padding: 10px;
+        width: 10px;
+        height: 10px;
+        margin: 0 5px;
+        border-radius: 50%;
+        background-color: #bbb;
+    }
+
+    .button.active {
+        background-color: #078d73;
+        border-bottom: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .stat-wrapper h3{
+        font-size: 22px;
+    }
+
+    .stat-wrapper p{
+        font-size: 12px;
+    }
+
+    .stat-wrapper section{
+        flex-direction: column;
+        background-color: white;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .phone{
+        display: block;
+    }
+
+    .stat-wrapper .img-div{
+        max-width: 100%;
+    }
+
+    .stat-div{
+        width: 100% !important;
+        border-radius: 50px 50px 0 0;
+        margin-top: -22%;
+        box-sizing: border-box;
+        background-color: #fac06f;
+    }
+
+    .inner-div{
+        padding: 50px 0 !important;
+    }
+
+
+
+
+
+
+
+
+
+
+    .distributor-wrapper{
+        padding: 25px 0;
+    }
+
+    .distributor-wrapper h3{
+        font-size: 22px;
+    }
+
+    .distributor-wrapper p{
+        font-size: 14px !important;
+    }
+
+    .distributor-wrapper .group-btn{
+        flex-direction: column;
+    }
+
+    .distributor-wrapper .group-btn a{
+        font-size: 14px;
+    }
+
+    .distributor-wrapper .feature-card-wrap{
+        flex-direction: column;
+    }
+
+    .feature-card .counts{
+        font-size: 38px;
+    }
+
+    .feature-card .name{
+        font-size: 18px;
+    }
+
+    .stat-div .content{
+        margin: 50px 0 !important;
+    }
+
+    .leading-numbers .text{
+        font-size: 12px !important;
+    }
+
+    .leading-numbers li{
+        width: calc(50% - 30px);
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+
+    .group-btn{
+        flex-direction: column;
+    }
+
+    .group-btn a{
+        font-size: 14px !important;
+    }
+
+
+
+
+
+    .app-ad-wrap{
+        display: flex;
+        align-items: center;
+    }
+
+    .app-ad-wrap i{
+        width: 20px;
+        height: 20px;
+        background-image: url("asset/x.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 20px 25px;
+    }
+
+    .app-ad-wrap a{
+        margin-left: 5px;
+    }
+
+    .app-ad-wrap h4{
+        color: #333333;
+        margin-right: 10px;
+        margin-left: 10px;
+        font-weight: 400;
+        font-size: 12px;
+    }
+
+    .app-ad .use-app-link a{
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 12px;
+        background-color: #1d5c49;
+        border-radius: 10px;
+        color: #fff;
+        white-space: nowrap;
+    }
+
+
+
+
+
+
+    .scroller{
+        padding: 60px 20px;
+    }
+
+    .scroller h2{
+        font-size: 21px !important;
+    }
+
+    .scroller .blogs{
+        padding: 40px 0;
+    }
+
+    .scroller a{
+        font-size: 14px !important;
+    }
+
+    .scroller article, .scroller article img{
+        width: 252px;
+    }
+
+    .scroller article h3{
+        font-size: 14px;
+    }
+
+    .scroller article p{
+        font-size: 11px;
+    }
+
+    .view-top{
+        display: none;
+    }
+
+    .view-bottom{
+        display: flex;
+    }
+
+    
+
+    
+
+
+    
+
+    .last-sec h4{
+        font-size: 15px;
+    }
+
+    .last-sec p{
+        font-size: 14px;
+    }
+
+
+
+
+
+
+
+    .pay-app{
+        flex-direction: column;
+    }
+
+    .pay-app h4{
+        font-size: 12px;
+    }
+
+    .pay-app .pay img{
+        width: 50px;
+    }
+
+    .apps{
+        padding: 20px 0 0 0;
+    }
+
+    .apps img{
+        width: 155px;
+    }
+
+    .apps .bisleri-bottles{
+        width: 135px;
+    }
+
+    .lists{
+        padding: 10px 0;
+        flex-direction: column;
+    }
+
+    .lists div{
+        width: 100%;
+    }
+
+    .lists ul li:first-child {
+        font-weight: 700 !important;
+        font-size: 11px;
+        margin-bottom: 15px;
+    }
+
+    .lists ul{
+        margin-bottom: 25px;
+    }
+
+    .lists a, .lists li{
+        font-size: 11px;
+    }
+
+    .copyright{
+        padding: 20px 0;
+        flex-direction: column-reverse;
+    }
+
+    .copyright-text p{
+        width: 100%;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .copyright p,  .copyright a{
+        font-size: 11px !important;
+    }
+    
+    .copyright a{
+        text-align: center;
+        font-weight: 500;
+        margin: 0 20px 15px 0;
+    }
+
+
+
+
+    .help-btn button{
+        font-size: 8px;
+        background-size: 15px;
+    }
 }

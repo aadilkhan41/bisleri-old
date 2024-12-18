@@ -49,17 +49,32 @@ window.addEventListener("load", function () {
 let bannerHeight = 0;
 adjustBannerHeights();
 
-function adjustBannerHeights(){
+function adjustBannerHeights() {
     const aspectRatioWidth = 640;
     const aspectRatioHeight = 269;
-    const containerWidth = document.getElementById('banner-container').offsetWidth;
-    bannerHeight = (containerWidth / aspectRatioWidth) * aspectRatioHeight;
-    document.querySelector('.banner-container').style.height = bannerHeight+"px";
+    const contObj = document.getElementById('banner-container');
+    const containerWidth = contObj.offsetWidth;
+
+    if (window.innerWidth <= 480) {
+        contObj.innerHTML = "<div class='banners' id='banners'><div class='banner'><img src='https://www.bisleri.com/images/home-banner-slider/bisleri-banner-home-mob.webp' alt='Bisleri Banner' id='banner1'></div><div class='banner'><img src='https://www.bisleri.com/images/home-banner-slider/vedica-banner-mob.webp' alt='Vedica Banner' id='banner2'></div><div class='banner'><img src='https://www.bisleri.com/images/home-banner-slider/fizz-banner-mob.webp' alt='Fizz Banner' id='banner3'></div></div><div class='buttons'><button title='Bisleri Packaged Drinking Water' class='button active' onclick='showBanner(0)'></button><button title='Vedica - Himalayan Spring Water' class='button' onclick='showBanner(1)'></button><button title='Carbonated Soft Drinks' class='button' onclick='showBanner(2)'></button></div>";
+        bannerHeight = "auto";
+    } else {
+        contObj.innerHTML = "<div class='banners' id='banners'><div class='banner'><img src='asset/bisleri-banner-home.webp' alt='Bisleri Banner' id='banner1'></div><div class='banner'><img src='asset/vedica-banner.webp' alt='Fizz Banner' id='banner2'></div><div class='banner'><img src='asset/fizz-banner.webp' alt='Vedica Banner' id='banner3'></div></div><div class='buttons'><button class='button active' onclick='showBanner(0)'>Bisleri Packaged Drinking Water</button><button class='button' onclick='showBanner(1)'>Vedica - Himalayan Spring Water</button><button class='button' onclick='showBanner(2)'>Carbonated Soft Drinks</button></div>";
+        bannerHeight = (containerWidth / aspectRatioWidth) * aspectRatioHeight;
+    }
+
+    document.querySelector('.banner-container').style.height = bannerHeight === "auto" ? "auto" : bannerHeight + "px";
 }
 
 function showBanner(index) {
     const banners = document.getElementById('banners');
-    banners.style.transform = `translateY(-${index * bannerHeight}px)`;
+
+    if (window.innerWidth <= 480) {
+        const bannerWidth = document.querySelector('.banner').offsetWidth;
+        banners.scrollTo({ left: index * bannerWidth, behavior: 'smooth' });
+    } else {
+        banners.style.transform = `translateY(-${index * bannerHeight}px)`;
+    }
 
     // Update active button
     const buttons = document.querySelectorAll('.button');
@@ -75,6 +90,14 @@ window.onload = function() {
 window.onresize = function() {
     adjustBannerHeights();
 };
+
+
+
+
+
+
+
+
 
 // Get the button
 const backToTopButton = document.querySelector(".backtoup");
