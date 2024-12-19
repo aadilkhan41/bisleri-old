@@ -137,6 +137,7 @@ header{
     top: 0;
     left: 0;
     right: 0;
+    z-index: 6;
     box-sizing: border-box;
     background-color: white;
 }
@@ -286,7 +287,42 @@ header{
     background-size: 20px 20px;
 }
 
+.empty-cart-msg{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 2;
+    font-weight: 600;
+    box-sizing: border-box;
+    transition: all 0.5s ease-out;
+    background-color: #ffe667;
+}
 
+header .logo .menu{
+    display: none;
+}
+
+header .header-right span{
+    display: none;
+}
+
+@media screen and (max-width: 1149px) {
+    header nav{
+        display: none;
+    }
+
+    header{
+        padding-bottom: 20px;
+    }
+}
+
+
+.phone-menu{
+    display: none;
+}
 
 
 
@@ -694,7 +730,289 @@ footer .footer-help{
 
     header{
         top: 72px;
+        padding: 15px 20px;
+        box-sizing: border-box;
     }
+
+    header .header-top{
+        display: none;
+    }
+
+    header .header-bottom{
+        padding: 0;
+    }
+
+    header .logo{
+        display: flex;
+        margin: 0;
+    }
+
+    header .logo .menu{
+        width: 40px;
+        display: block;
+        border: none;
+        outline: none;
+        background-image: url("asset/menu.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 35px 35px;
+    }
+
+    header .logo img{
+        width: 80%;
+    }
+
+    header .header-right{
+        margin-right: -5px;
+    }
+
+    header .header-right span{
+        display: block;
+        font-size: 12px;
+        padding: 10px 0;
+    }
+
+    header .header-right .login{
+        display: none;
+    }
+
+    header .header-right button{
+        width: 25px;
+        height: 25px;
+        margin: 5px 0 0 20px;
+        background-size: 18px 18px !important;
+    }
+
+    .search-bar-panel{
+        display: none;
+        padding: 50px 0;
+    }
+
+    .search-bar-panel div{
+        width: 100% !important;
+    }
+
+    .search-bar-panel h2{
+        font-size: 23px;
+    }
+
+    .search-bar-panel .close-panel{
+        top: 12px;
+        right: 50px;
+        padding-left: 25px;
+        font-size: 12px;
+    }
+
+    .search-wraper{
+        margin-top: 20px !important;
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .search-wraper input{
+        font-size: 12px;
+    }
+
+    .search-wraper button{
+        font-size: 12px;
+    }
+
+    .top-brands{
+        margin: 0px !important;
+    }
+
+    .top-brands p{
+        font-size: 14px;
+    }
+
+    .top-brands div{
+        width: 300px !important;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    .top-brands label{
+        margin-bottom: 15px;
+        font-size: 10px;
+    }
+
+    .phone-menu{
+        width: 0%;
+        position: fixed;
+        top: 72px;
+        left: -50px;
+        right: 0;
+        bottom: 0;
+        z-index: 20;
+        background-color: white;
+        display: flex;
+        transition: width 0.3s ease;
+    }
+    
+    .phone-menu .list-cont{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        overflow-y: scroll;
+        flex-direction: column;
+    }
+    
+    .log-reg{
+        background: linear-gradient(180deg, #9fdeef 0, #a9e4e2 23%, #aae2df 24%, #b0e5dd 32%, #afe4da 33%, #b4e7d6 42%, #b3e6d3 43%, #b6e7d4 45%, #b6e7d1 50%, #bceacd 58%, #bbeaca 59%, #c0ecc8 68%, #c1ebc5 69%, #c3eec3 74%, #c3ecc0 75%, #c9efbe 83%, #c8eebb 84%, #cef1b7 93%, #ccf0b3 94%, #cff2b2);
+    }
+    
+    .phone-menu .close-menu{
+        width: 40px;
+        height: 40px;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        background-image: url("asset/x.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 35px 35px;
+        background-color: white;
+    }
+    
+    .phone-menu .list-cont li{
+        width: 100%;
+        padding: 0 5px;
+        font-size: 17px;
+        box-sizing: border-box;
+    }
+    
+    .phone-menu .list-cont li a, .phone-menu .list-cont li p{
+        width: 100%;
+        display: block;
+        font-size: 17px;
+        padding: 25px 15px;
+        color: #333333;
+        text-decoration: none;
+        box-sizing: border-box;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    
+    .phone-menu .list-cont li .exp{
+        background-image: url("asset/right.svg");
+        background-position: calc(100% - 10px) center;
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
+    }
+    
+    .phone-menu section a{
+        color: #333333;
+        text-decoration: none;
+        font-size: 17px;
+        display: flex;
+        padding: 15px 60px;
+    }
+    
+    .phone-menu section .phone{
+        background-image: url("asset/phone.jpg");
+        background-position: 20px center;
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
+    }
+    
+    .phone-menu section .email{
+        background-image: url("asset/email.jpg");
+        background-position: 20px center;
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
+    }
+
+    .exp-menu{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: none;
+        background-color: white;
+    }
+
+    .exp-menu ul li:first-child{
+        padding-left: 30px;
+        box-sizing: border-box;
+        background-image: url("asset/left.svg");
+        background-position:  15px center;
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
+    }
+
+    .close-menu-div{
+        z-index: 10;
+        background-color: white;
+        border-left: 1px solid #e5e5e5;
+    }
+
+    .search-bar-panel{
+        display: none;
+        padding: 50px 0;
+    }
+
+    .search-bar-panel div{
+        width: 100% !important;
+    }
+
+    .search-bar-panel h2{
+        font-size: 23px;
+    }
+
+    .search-bar-panel .close-panel{
+        top: 12px;
+        right: 50px;
+        padding-left: 25px;
+        font-size: 12px;
+    }
+
+    .search-wraper{
+        margin-top: 20px !important;
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .search-wraper input{
+        font-size: 12px;
+    }
+
+    .search-wraper button{
+        font-size: 12px;
+    }
+
+    .top-brands{
+        margin: 0px !important;
+    }
+
+    .top-brands p{
+        font-size: 14px;
+    }
+
+    .top-brands div{
+        width: 300px !important;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    .top-brands label{
+        margin-bottom: 15px;
+        font-size: 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 
     .app-ad-wrap{
         display: flex;
@@ -734,6 +1052,16 @@ footer .footer-help{
     }
 
 
+
+
+
+
+
+
+
+
+
+
     .login-top h1{
         font-size: 23px;
     }
@@ -745,12 +1073,6 @@ footer .footer-help{
     main > div{
         max-width: none;
     }
-
-
-
-
-
-
 
     .login-top{
         padding-top: 60px;
