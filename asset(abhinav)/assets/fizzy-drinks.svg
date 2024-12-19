@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="270" height="510" viewBox="0 0 270 510">
+                <g id="Group_48120" data-name="Group 48120" transform="translate(-1837 -2058)">
+                  <path id="full_grey" data-name="full grey" d="M252,0C391.176,0,504,112.824,504,252S391.176,504,252,504" transform="translate(1585 2061)" fill="none" stroke="#dededd" stroke-width="6"/>
+                  <path class="fizz-progress bar" data-name="full grey" d="M252,0C391.176,0,504,112.824,504,252S391.176,504,252,504" transform="translate(1585 2061)" fill="none" stroke="#f5c183" stroke-width="6" style="stroke-dashoffset: 877px;"/>
+                  <circle id="Ellipse_12" data-name="Ellipse 14" cx="18" cy="18" r="18" transform="translate(1965 2500)" fill="#f5c183"/>
+                  <circle id="Ellipse_13" data-name="Ellipse 13" cx="18" cy="18" r="18" transform="translate(2071 2295)" fill="#f5c183"/>
+                  <circle id="Ellipse_16" data-name="Ellipse 16" cx="18" cy="18" r="18" transform="translate(2045 2406)" fill="#f5c183"/>
+                  <circle id="Ellipse_15" data-name="Ellipse 15" cx="18" cy="18" r="18" transform="translate(2038 2169)" fill="#f5c183"/>
+                  <circle id="Ellipse_14" data-name="Ellipse 14" cx="18" cy="18" r="18" transform="translate(1955 2083)" fill="#f5c183"/>
+
+                </g>
+              </svg>

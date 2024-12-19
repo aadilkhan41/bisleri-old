@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="blogs.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://www.bisleri.com/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <script src="../asset (aadil)/index.js"></script>
+
+  </head>
+  <body>
+    <!-- Common Code Start (Header) -->
+    <div id="loader">
+      <img src="assets/loader.gif" alt="Loading...">
+  </div>
+
+  <div class="app-ad">
+      <div class="app-ad-wrap">
+          <i onclick="hideAppAd()"></i>
+          <a href="../asset (aadil)/index.html"><img src="https://www.bisleri.com/images/bisleri-icon.webp" alt="Bisleri"></a>
+          <h4>Value Deals on Bisleri app</h4>
+      </div>
+      <span class="use-app-link">
+          <a href="#">Use App</a>
+      </span>
+  </div>
+
+  <div class="empty-cart-msg">
+      <p>There is no product added in the cart</p>
+  </div>
+
+  <header>
+      <div class="header-top">
+          <div class="header-loc">
+              <div class="down">Jaipur</div>
+              <button title="location">GO</button>
+          </div>
+          <ul class="drop-down">
+              <li>Ahmedabad</li>
+              <li>Bangalore</li>
+              <li>Chandigarh</li>
+              <li>Chennai</li>
+              <li>Coimbatore</li>
+              <li>Delhi</li>
+              <li>Faridabad</li>
+              <li>Ghaziabad</li>
+              <li>Goa</li>
+              <li>Gurugram</li>
+              <li>Hyderabad</li>
+              <li>Jaipur</li>
+              <li>Kolkata</li>
+              <li>Ludhiana</li>
+              <li>Mumbai</li>
+              <li>Mysore</li>
+              <li>Navi Mumbai</li>
+              <li>Noida</li>
+              <li>Pondicherry</li>
+              <li>Pune</li>
+              <li>Sahibabad</li>
+              <li>Thane</li>
+              <li>Visakhapatnam</li>
+          </ul>
+          <div class="header-info">
+              <a href="tel:1800 121 1007"><span class="phone"></span><span>1800 121 1007</span></a>
+              <a href="mailto:wecare@bisleri.co.in"><span class="email"></span><span>wecare@bisleri.co.in</span></a>
+          </div>
+      </div>
+      <div class="header-bottom">
+          <div class="header-left">
+              <div class="logo">
+                  <input class="menu" type="button" title="menu" onclick="renderPhoneMenu()">
+                  <a href="../asset (aadil)/index.html">
+                      <img src="https://www.bisleri.com/images/logo.webp" alt="Bisleri">
+                  </a>
+              </div>
+              <nav>
+                  <ul>
+                      <li><a class="active" href="">Home</a></li>
+                      <li class="expend greener-promise"><a href="">Greener Promise</a>
+                      <div class="greener-drop-down">
+                          <a href="https://www.bisleri.com/greenerPromise">Bisleri Greener Promise</a>
+                              <ul>
+                                  <li>
+                                      <a href="https://www.bisleri.com/greener-promise/sustainability-report-2021-22.pdf">Sustainability Report</a>
+                                  </li>
+                                  <li>
+                                      <a href="https://www.bisleri.com/bottles-for-change">Bottles For Change</a>
+                                  </li>
+                                  <li>
+                                      <a href="https://www.bisleri.com/rainwater-harvesting">Nayi Umeed</a>
+                                  </li>
+                                  <li>
+                                      <a class="font--size-16 font-family1 font--bold" href="https://www.bisleri.com/pdf/csr-policy.pdf" target="_blank" rel="noopener">CSR Policy</a>
+                                  </li>
+                                  <li>
+                                      <a class="font--size-16 font-family1 font--bold" href="https://www.bisleri.com/csr-annual-return" target="_blank" rel="noopener">CSR Annual Return</a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </li>
+                      <li><a href="">Shop Products</a></li>
+                      <li class="expend brands">
+                          <a href="">Brands</a>
+                          <div class="brand-dropdown">
+                              <section>
+                                  <h3 class="h3-1">Bisleri</h3>
+                                  <ul>
+                                      <li><a href="https://www.bisleri.com/bisleri-packaged-drinking-water">Bisleri
+                                              Packaged Drinking Water</a>
+                                      </li>
+                                  </ul>
+                              </section>
+                              <section>
+                                  <h3 class="h3-2">Vedica</h3>
+                                  <ul>
+                                      <li><a href="https://www.bisleri.com/vedica">Vedica Himalayan Spring Water</a>
+                                      </li>
+                                      <li><a href="https://www.bisleri.com/vedica-in-glass">Vedica In Glass</a></li>
+                                      <li><a href="https://www.bisleri.com/vedica-in-glass">Vedica Sparkling Water</a>
+                                      </li>
+                                  </ul>
+                              </section>
+                              <section>
+                                  <h3 class="h3-3">Carbonated Soft Drinks</h3>
+                                  <ul>
+                                      <li><a href="https://www.bisleri.com/bisleri-soda">Bisleri Soda</a></li>
+                                  </ul>
+                              </section>
+                          </div>
+                      </li>
+                      <li class="expend news-room">
+                          <a href="">News Room</a>
+                          <div class="news-room-drop-down">
+                              <span></span>
+                              <ul>
+                                  <li>
+                                      <a href="https://www.bisleri.com/press-release">Press Release</a>
+                                  </li>
+                                  <li>
+                                      <a href="https://www.bisleri.com/news">News</a>
+                                  </li>
+                                  <li>
+                                      <a href="https://www.bisleri.com/blogs">Blogs</a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </li>
+                      <li><a href="">Subscription</a></li>
+                      <li><a href="">UAE</a></li>
+                      <li><a href="">Referral</a></li>
+                  </ul>
+              </nav>
+          </div>
+          <div class="header-right">
+              <span>Jaipur</span>
+              <button class="search" type="button" title="search" onclick="renderSearchBar()"></button>
+              <div class="search-bar-panel">
+                  <div>
+                      <button class="close-panel" onclick="hideSearchBar()">Close</button>
+                      <h2>What are you looking for?</h2>
+                      <div class="search-bar">
+                          <div class="search-wraper">
+                              <input type="text" name="search-bar" placeholder="Type here">
+                              <button type="button">Search</button>
+                          </div>
+                      </div>
+                      <div class="top-brands">
+                          <p>Top brands</p>
+                          <div>
+                              <label>Bisleri Mineral Water</label>
+                              <label>Vedica - Himalayan Spring Water</label>
+                              <label>Hand Purifiers</label>
+                              <label>Merchandise</label>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <button class="login" type="button" title="login"></button>
+              <ul class="login-drop-down">
+                  <li><a href="login.html">Login</a></li>
+                  <li><a href="signup.html">Register</a></li>
+              </ul>
+              <button class="cart" type="button" title="cart" onclick="emptyCart()"></button>
+          </div>
+      </div>
+  </header>
+
+  <div class="phone-menu">
+      <div class="list-cont">
+          <ul class="log-reg">
+              <li><a class="menu-links" href="login.html">Login</a></li>
+              <li><a href="signup.html">Register</a></li>
+          </ul>
+          <ul>
+              <li>
+                  <p class="exp" onclick="renderSubMenu('exp-menu-1')">Greener Promise</p>
+                  <div class="exp-menu exp-menu-1">
+                      <ul>
+                          <li onclick="hideSubMenu('exp-menu-1')"><p><b>Back</b></p></li>
+                          <li><a href="">Bisleri Greener Promise</a></li>
+                          <li><a href="https://www.bisleri.com/greener-promise/sustainability-report-2021-22.pdf">Sustainability report</a></li>
+                          <li><a href="">Bottles For Change</a></li>
+                          <li><a href="">Nayi Umeed</a></li>
+                          <li><a href="https://www.bisleri.com/pdf/csr-policy.pdf">CSR Policy</a></li>
+                          <li><a href="">CSR Annual Return</a></li>
+                      </ul>
+                  </div>
+              </li>
+              <li><a href="">Shop Products</a></li>
+              <li>
+                  <p class="exp" onclick="renderSubMenu('exp-menu-2')">Brands</p>
+                  <div class="exp-menu exp-menu-2">
+                      <ul>
+                          <li onclick="hideSubMenu('exp-menu-2')"><p><b>Back</b></p></li>
+                          <li><a href="">Bisleri Packed Drinking Water</a></li>
+                          <li><a href="">Vedica Himalayan Spring Water</a></li>
+                          <li><a href="">Vedica In Glass</a></li>
+                          <li><a href="">Vedica Spakling Water</a></li>
+                          <li><a href="">Bisleri Soda</a></li>
+                      </ul>
+                  </div>
+              </li>
+              <li>
+                  <p class="exp" onclick="renderSubMenu('exp-menu-3')">News Room</p>
+                  <div class="exp-menu exp-menu-3">
+                      <ul>
+                          <li onclick="hideSubMenu('exp-menu-3')"><p><b>Back</b></p></li>
+                          <li><a href="">Press Release</a></li>
+                          <li><a href="">News</a></li>
+                          <li><a href="">Blogs</a></li>
+                      </ul>
+                  </div>
+              </li>
+              <li><a href="">Subscription</a></li>
+              <li><a href="">UAE</a></li>
+          </ul>
+          <section>
+              <a class="phone" href="tel:1800 121 1007">1800 121 1007</a>
+              <a class="email" href="mailto:wecare@bisleri.co.in">wecare@bisleri.co.in</a>
+          </section>
+      </div>
+      <div class="close-menu-div"><button class="close-menu" title="close-menu" onclick="hidePhoneMenu()"></button></div>
+  </div>
+  <!-- Common Code End (Header) -->
+
+  
+    
+   
+
+    <div id="app">
+      <input type="hidden" name="url" value="blogs" />
+
+      <section class="water--health-bannerbg">
+        <div class="background--color-gradientOne padding--bottom-100">
+          <div class="container--responsive">
+            <div class="breadcrumbs-wrap">
+              <ul>
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#">Blogs</a>
+                </li>
+              </ul>
+            </div>
+            <div class="title-wraper margin--top-30 margin--bottom-40">
+              <h3 class="title">Blogs</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="water--health-main-wrapper" data-category="About_Banner">
+        <div class="container--responsive">
+          <div class="water-card health-card">
+            <div
+              class="article--card"
+              data-type=""
+              data-category="Related_Articles"
+              aria-hidden="true"
+            >
+              <div class="article--image">
+                <img
+                  src="assets/XmKSHRtEfa3JlAZTYdCG.jpg"
+                  class=""
+                  alt="Top Methods to Purify Borewell Water at Home"
+                  loading="lazy"
+                />
+              </div>
+              <div class="article--content">
+                <h3 class="article--title">
+                  Top Methods to Purify Borewell Water at Home
+                </h3>
+                <p class="article--body">
+                  Let us take a closer look at some of the symptoms of unclean
+                  borewell and the methods that can be used to purify the same.
+                </p>
+                <a
+                  href="#"
+                  class="article--link"
+                  data-category="Read_More"
+                  >Read More
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="article--card"
+              data-type=""
+              data-category="Related_Articles"
+              aria-hidden="true"
+            >
+              <div class="article--image">
+                <img
+                  src="assets/Qb8QNeYJ6eM2B062wUau.jpg"
+                  class=""
+                  alt="Top 5 Water Purification Methods for Safe Drinking Water"
+                  loading="lazy"
+                />
+              </div>
+              <div class="article--content">
+                <h3 class="article--title">
+                  Top 5 Water Purification Methods for Safe Drinking Water
+                </h3>
+                <p class="article--body">
+                  Here are 5 methods of water purification that you can consider
+                  to ensure safe water consumption at home.
+                </p>
+                <a
+                  href="#"
+                  class="article--link"
+                  data-category="Read_More"
+                  >Read More
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="article--card"
+              data-type=""
+              data-category="Related_Articles"
+              aria-hidden="true"
+            >
+              <div class="article--image">
+                <img
+                  src="assets/oUj8TIHA4YJcqd0lP7bJ.jpg"
+                  class=""
+                  alt="Understanding TDS and its Role in Drinking Water"
+                  loading="lazy"
+                />
+              </div>
+              <div class="article--content">
+                <h3 class="article--title">
+                  Understanding TDS and its Role in Drinking Water
+                </h3>
+                <p class="article--body">
+                  Water is the most critical resource issue of our lifetime and
+                  our children’s lifetime.
+                </p>
+                <a
+                  href="#"
+                  class="article--link"
+                  data-category="Read_More"
+                  >Read More
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="article--card"
+              data-type=""
+              data-category="Related_Articles"
+              aria-hidden="true"
+            >
+              <div class="article--image">
+                <img
+                  src="assets/u7TrrEJmP8Q5a3wHU1AW.jpg"
+                  class=""
+                  alt="Top Natural Methods to Purify Water at Home without Chemicals"
+                  loading="lazy"
+                />
+              </div>
+              <div class="article--content">
+                <h3 class="article--title">
+                  Top Natural Methods to Purify Water at Home without Chemicals
+                </h3>
+                <p class="article--body">
+                  Here are a few natural methods that you can use to purify
+                  water without any hassles.
+                </p>
+                <a
+                  href="#"
+                  class="article--link"
+                  data-category="Read_More"
+                  >Read More
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="article--card"
+              data-type=""
+              data-category="Related_Articles"
+              aria-hidden="true"
+            >
+              <div class="article--image">
+                <img
+                  src="assets/hMRyWA222ywj60aiCneE.jpg"
+                  class=""
+                  alt="Why Should You Drink Water While Sitting?"
+                  loading="lazy"
+                />
+              </div>
+              <div class="article--content">
+                <h3 class="article--title">
+                  Why Should You Drink Water While Sitting?
+                </h3>
+                <p class="article--body">
+                  Should you then drink water in a sitting position? That’s what
+                  we aim to explore in this article.
+                </p>
+                <a
+                  href="#"
+                  class="article--link"
+                  data-category="Read_More"
+                  >Read More
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="article--card"
+              data-type=""
+              data-category="Related_Articles"
+              aria-hidden="true"
+            >
+              <div class="article--image">
+                <img
+                  src="assets/YGDW7eUC3VIb4mZHhx7u.jpg"
+                  class=""
+                  alt="Cold Water vs. Warm Water- Which is Better for Your Health"
+                  loading="lazy"
+                />
+              </div>
+              <div class="article--content">
+                <h3 class="article--title">
+                  Cold Water vs. Warm Water- Which is Better for Your Health
+                </h3>
+                <p class="article--body">
+                  In this article, we will go through the pros and cons of each,
+                  so that you are better informed.
+                </p>
+                <a
+                  href="#"
+                  class="article--link"
+                  data-category="Read_More"
+                  >Read More
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="article--card"
+              data-type=""
+              data-category="Related_Articles"
+              aria-hidden="true"
+            >
+              <div class="article--image">
+                <img
+                  src="assets/YFFQr6N3kAauUEH4qvpZ.jpg"
+                  class=""
+                  alt="Why Soda Water is a Refreshing Choice"
+                  loading="lazy"
+                />
+              </div>
+              <div class="article--content">
+                <h3 class="article--title">
+                  Why Soda Water is a Refreshing Choice
+                </h3>
+                <p class="article--body">
+                  Club soda is a fizzy, calorie-free drink, perfect as a mixer,
+                  for cooking, or as a refreshing beverage.
+                </p>
+                <a
+                  href="#"
+                  class="article--link"
+                  data-category="Read_More"
+                  >Read More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <button class="scrollToTop"><i class="bs--up-arrow"></i></button>
+
+    
+<!-- Common Code Start (Footer & Go to Up & Expert Chat) -->
+<button class="backtoup" type="button" title="top"></button>
+
+<div class="help-btn">
+    <button type="button" title="chat with expert">Chat with Expert</button>
+</div>
+
+<footer>
+    <div class="footer-cont">
+        <div class="pay-app">
+            <div class="pay">
+                <h4>Secure Payments</h4>
+                <ul>
+                    <li><img src="assets/visa.jpg" alt=""></li>
+                    <li><img src="assets/mastercard.jpg" alt=""></li>
+                    <li><img src="assets/paytm.jpg" alt=""></li>
+                    <li><img src="assets/maestro.jpg" alt=""></li>
+                    <li><img src="assets/norton.webp" alt=""></li>
+                    <li><img src="assets/mcafee.webp" alt=""></li>
+                </ul>
+            </div>
+            <div class="apps">
+                <h4>Our Apps:</h4>
+                <ul>
+                    <li><img class="bisleri-bottles" src="assets/bisleri-bottles.webp" alt=""></li>
+                    <li><img class="android-btn" src="assets/android-btn.webp" alt=""></li>
+                    <li><img class="appstore-btn" src="assets/appstore-btn.webp" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        <div class="lists">
+            <div>
+                <ul>
+                    <li>About Us</li>
+                    <li><a href="https://www.bisleri.com/our-journey">Our Journey</a></li>
+                    <li><a href="https://www.bisleri.com/what-makes-us-stand-apart">What makes us Stand Apart</a></li>
+                    <li><a href="https://www.bisleri.com/90-quality-tests">90 Quality Tests</a></li>
+                    <li><a href="https://www.bisleri.com/promise-of-10">The Promise of 10</a></li>
+                    <li><a href="https://www.bisleri.com/vision-mission-values">Vision, Mission & Values</a></li>
+                    <li><a href="https://www.bisleri.com/team">Leadership Team</a></li>
+                    <li><a href="https://www.bisleri.com/career">Careers</a></li>
+                    <li><a href="https://www.bisleri.com/contact-us">Contact Us</a></li>
+                    <li><a href="https://www.bisleri.com/terms-conditions">Terms & Conditions</a></li>
+                    <li><a href="https://www.bisleri.com/cancel-refund-policy">Cancelation & Refund Policy</a></li>
+                    <li><a href="https://www.bisleri.com/faq">FAQs</a></li>
+                    <li><a href="https://www.bisleri.com/annual-return">Annual Return</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Brands</li>
+                    <li><a href="https://www.bisleri.com/bisleri-packaged-drinking-water">Bisleri</a></li>
+                    <li><a href="https://www.bisleri.com/vedica">Vedica</a></li>
+                    <li><a href="https://www.bisleri.com/limonata">Limonata</a></li>
+                    <li><a href="https://www.bisleri.com/bisleri-soda">Bisleri Soda</a></li>
+                    <li><a href="https://www.bisleri.com/pop">Pop</a></li>
+                </ul>
+                <ul>
+                    <li>News Room</li>
+                    <li><a href="https://www.bisleri.com/press-release">Press Release</a></li>
+                    <li><a href="https://www.bisleri.com/news">News</a></li>
+                    <li><a href="https://www.bisleri.com/blogs">Blogs</a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://www.bisleri.com/uae"><b>UAE</b></a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Become a Distributor</li>
+                    <li><a href="https://www.bisleri.com/distributor">Apply for Bisleri Dealership</a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://www.bisleri.com/greenerPromise"><b>Greener Promise</b></a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Contact</li>
+                    <li>Bisleri International Pvt. Ltd.<br><br>
+                        CTS No. 525/1A/1, Western Express <br><br>
+                        Highway,<br><br>
+                        Opp Hindustan Unilever, at Chakala <br><br>
+                        Division,<br><br>
+                        Andheri (East), Mumbai – 400 099</li>
+                </ul>
+                <ul>
+                    <li class="email"><b>Email:</b> <a href="mailto:wecare@bisleri.co.in">wecare@bisleri.co.in</a>
+                    </li>
+                    <li class="phone">Phone: <a href="tel:18001211007">1800-121-1007</a></li>
+                    <li class="time">8 AM to 8 PM</li>
+                    <li class="days">Monday to Saturday</li>
+                </ul>
+                <ul class="social-links">
+                    <li><a class="facebook" href="https://www.facebook.com/Bisleri/"></a></li>
+                    <li><a class="twitter" href="https://twitter.com/BisleriZone"></a></li>
+                    <li><a class="instagram" href="https://www.instagram.com/bislerizone/"></a></li>
+                    <li><a class="youtube" href="https://www.youtube.com/user/BisleriIndia"></a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright">
+            <div class="copyright-text">
+                <p>© COPYRIGHTS 2020-21</p>
+            </div>
+            <div class="base-links">
+                <a href="https://payments.billdesk.com/MercOnline/BisleriController" title="Online Payment">Online
+                    Payment</a>
+                <a href="https://www.bisleri.com/compliance" title="Compliance">Compliance</a>
+                <a href="https://www.bisleri.com/privacy-policy" title="Privacy Policy">Privacy Policy</a>
+                <a href="https://www.bisleri.com/cookies-policy" title="Cookie Policy">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="show-480px-770px">
+    <div class="show-480px-770px-cont">
+        <div class="rotating_image">
+            <img src="https://www.bisleri.com/images/rotate.webp" alt="rotate" loading="lazy">
+        </div>
+        <div class="landscape_text">
+            <h3>Please rotate your device</h3>
+            <p>We do not support landscape mode, <br>please use the website in the portrait mode for best experience.</p>
+        </div>
+    </div>
+</div>
+<!-- Common Code End (Footer & Go to Up & Expert Chat) -->
+  </body>
+</html>

@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <link rel="stylesheet" href="news.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://www.bisleri.com/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <script src="../asset (aadil)/index.js"></script>
+
+  </head>
+
+  <body>
+    <!-- Common Code Start (Header) -->
+    <div id="loader">
+      <img src="assets/loader.gif" alt="Loading...">
+  </div>
+
+  <div class="app-ad">
+      <div class="app-ad-wrap">
+          <i onclick="hideAppAd()"></i>
+          <a href="../asset (aadil)/index.html"><img src="https://www.bisleri.com/images/bisleri-icon.webp" alt="Bisleri"></a>
+          <h4>Value Deals on Bisleri app</h4>
+      </div>
+      <span class="use-app-link">
+          <a href="#">Use App</a>
+      </span>
+  </div>
+
+  <div class="empty-cart-msg">
+      <p>There is no product added in the cart</p>
+  </div>
+
+  <header>
+      <div class="header-top">
+          <div class="header-loc">
+              <div class="down">Jaipur</div>
+              <button title="location">GO</button>
+          </div>
+          <ul class="drop-down">
+              <li>Ahmedabad</li>
+              <li>Bangalore</li>
+              <li>Chandigarh</li>
+              <li>Chennai</li>
+              <li>Coimbatore</li>
+              <li>Delhi</li>
+              <li>Faridabad</li>
+              <li>Ghaziabad</li>
+              <li>Goa</li>
+              <li>Gurugram</li>
+              <li>Hyderabad</li>
+              <li>Jaipur</li>
+              <li>Kolkata</li>
+              <li>Ludhiana</li>
+              <li>Mumbai</li>
+              <li>Mysore</li>
+              <li>Navi Mumbai</li>
+              <li>Noida</li>
+              <li>Pondicherry</li>
+              <li>Pune</li>
+              <li>Sahibabad</li>
+              <li>Thane</li>
+              <li>Visakhapatnam</li>
+          </ul>
+          <div class="header-info">
+              <a href="tel:1800 121 1007"><span class="phone"></span><span>1800 121 1007</span></a>
+              <a href="mailto:wecare@bisleri.co.in"><span class="email"></span><span>wecare@bisleri.co.in</span></a>
+          </div>
+      </div>
+      <div class="header-bottom">
+          <div class="header-left">
+              <div class="logo">
+                  <input class="menu" type="button" title="menu" onclick="renderPhoneMenu()">
+                  <a href="../asset (aadil)/index.html">
+                      <img src="https://www.bisleri.com/images/logo.webp" alt="Bisleri">
+                  </a>
+              </div>
+              <nav>
+                  <ul>
+                      <li><a class="active" href="">Home</a></li>
+                      <li class="expend greener-promise"><a href="">Greener Promise</a>
+                      <div class="greener-drop-down">
+                          <a href="https://www.bisleri.com/greenerPromise">Bisleri Greener Promise</a>
+                              <ul>
+                                  <li>
+                                      <a href="https://www.bisleri.com/greener-promise/sustainability-report-2021-22.pdf">Sustainability Report</a>
+                                  </li>
+                                  <li>
+                                      <a href="https://www.bisleri.com/bottles-for-change">Bottles For Change</a>
+                                  </li>
+                                  <li>
+                                      <a href="https://www.bisleri.com/rainwater-harvesting">Nayi Umeed</a>
+                                  </li>
+                                  <li>
+                                      <a class="font--size-16 font-family1 font--bold" href="https://www.bisleri.com/pdf/csr-policy.pdf" target="_blank" rel="noopener">CSR Policy</a>
+                                  </li>
+                                  <li>
+                                      <a class="font--size-16 font-family1 font--bold" href="https://www.bisleri.com/csr-annual-return" target="_blank" rel="noopener">CSR Annual Return</a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </li>
+                      <li><a href="">Shop Products</a></li>
+                      <li class="expend brands">
+                          <a href="">Brands</a>
+                          <div class="brand-dropdown">
+                              <section>
+                                  <h3 class="h3-1">Bisleri</h3>
+                                  <ul>
+                                      <li><a href="https://www.bisleri.com/bisleri-packaged-drinking-water">Bisleri
+                                              Packaged Drinking Water</a>
+                                      </li>
+                                  </ul>
+                              </section>
+                              <section>
+                                  <h3 class="h3-2">Vedica</h3>
+                                  <ul>
+                                      <li><a href="https://www.bisleri.com/vedica">Vedica Himalayan Spring Water</a>
+                                      </li>
+                                      <li><a href="https://www.bisleri.com/vedica-in-glass">Vedica In Glass</a></li>
+                                      <li><a href="https://www.bisleri.com/vedica-in-glass">Vedica Sparkling Water</a>
+                                      </li>
+                                  </ul>
+                              </section>
+                              <section>
+                                  <h3 class="h3-3">Carbonated Soft Drinks</h3>
+                                  <ul>
+                                      <li><a href="https://www.bisleri.com/bisleri-soda">Bisleri Soda</a></li>
+                                  </ul>
+                              </section>
+                          </div>
+                      </li>
+                      <li class="expend news-room">
+                          <a href="">News Room</a>
+                          <div class="news-room-drop-down">
+                              <span></span>
+                              <ul>
+                                  <li>
+                                      <a href="https://www.bisleri.com/press-release">Press Release</a>
+                                  </li>
+                                  <li>
+                                      <a href="https://www.bisleri.com/news">News</a>
+                                  </li>
+                                  <li>
+                                      <a href="https://www.bisleri.com/blogs">Blogs</a>
+                                  </li>
+                              </ul>
+                          </div>
+                      </li>
+                      <li><a href="">Subscription</a></li>
+                      <li><a href="">UAE</a></li>
+                      <li><a href="">Referral</a></li>
+                  </ul>
+              </nav>
+          </div>
+          <div class="header-right">
+              <span>Jaipur</span>
+              <button class="search" type="button" title="search" onclick="renderSearchBar()"></button>
+              <div class="search-bar-panel">
+                  <div>
+                      <button class="close-panel" onclick="hideSearchBar()">Close</button>
+                      <h2>What are you looking for?</h2>
+                      <div class="search-bar">
+                          <div class="search-wraper">
+                              <input type="text" name="search-bar" placeholder="Type here">
+                              <button type="button">Search</button>
+                          </div>
+                      </div>
+                      <div class="top-brands">
+                          <p>Top brands</p>
+                          <div>
+                              <label>Bisleri Mineral Water</label>
+                              <label>Vedica - Himalayan Spring Water</label>
+                              <label>Hand Purifiers</label>
+                              <label>Merchandise</label>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <button class="login" type="button" title="login"></button>
+              <ul class="login-drop-down">
+                  <li><a href="login.html">Login</a></li>
+                  <li><a href="signup.html">Register</a></li>
+              </ul>
+              <button class="cart" type="button" title="cart" onclick="emptyCart()"></button>
+          </div>
+      </div>
+  </header>
+
+  <div class="phone-menu">
+      <div class="list-cont">
+          <ul class="log-reg">
+              <li><a class="menu-links" href="login.html">Login</a></li>
+              <li><a href="signup.html">Register</a></li>
+          </ul>
+          <ul>
+              <li>
+                  <p class="exp" onclick="renderSubMenu('exp-menu-1')">Greener Promise</p>
+                  <div class="exp-menu exp-menu-1">
+                      <ul>
+                          <li onclick="hideSubMenu('exp-menu-1')"><p><b>Back</b></p></li>
+                          <li><a href="">Bisleri Greener Promise</a></li>
+                          <li><a href="https://www.bisleri.com/greener-promise/sustainability-report-2021-22.pdf">Sustainability report</a></li>
+                          <li><a href="">Bottles For Change</a></li>
+                          <li><a href="">Nayi Umeed</a></li>
+                          <li><a href="https://www.bisleri.com/pdf/csr-policy.pdf">CSR Policy</a></li>
+                          <li><a href="">CSR Annual Return</a></li>
+                      </ul>
+                  </div>
+              </li>
+              <li><a href="">Shop Products</a></li>
+              <li>
+                  <p class="exp" onclick="renderSubMenu('exp-menu-2')">Brands</p>
+                  <div class="exp-menu exp-menu-2">
+                      <ul>
+                          <li onclick="hideSubMenu('exp-menu-2')"><p><b>Back</b></p></li>
+                          <li><a href="">Bisleri Packed Drinking Water</a></li>
+                          <li><a href="">Vedica Himalayan Spring Water</a></li>
+                          <li><a href="">Vedica In Glass</a></li>
+                          <li><a href="">Vedica Spakling Water</a></li>
+                          <li><a href="">Bisleri Soda</a></li>
+                      </ul>
+                  </div>
+              </li>
+              <li>
+                  <p class="exp" onclick="renderSubMenu('exp-menu-3')">News Room</p>
+                  <div class="exp-menu exp-menu-3">
+                      <ul>
+                          <li onclick="hideSubMenu('exp-menu-3')"><p><b>Back</b></p></li>
+                          <li><a href="">Press Release</a></li>
+                          <li><a href="">News</a></li>
+                          <li><a href="">Blogs</a></li>
+                      </ul>
+                  </div>
+              </li>
+              <li><a href="">Subscription</a></li>
+              <li><a href="">UAE</a></li>
+          </ul>
+          <section>
+              <a class="phone" href="tel:1800 121 1007">1800 121 1007</a>
+              <a class="email" href="mailto:wecare@bisleri.co.in">wecare@bisleri.co.in</a>
+          </section>
+      </div>
+      <div class="close-menu-div"><button class="close-menu" title="close-menu" onclick="hidePhoneMenu()"></button></div>
+  </div>
+  <!-- Common Code End (Header) -->
+
+    <div id="app">
+      <section class="news--main-wrapper gradient--top padding--bottom-100">
+        <div class="container--responsive">
+          <div class="breadcrumbs-wrap">
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">News</a>
+              </li>
+            </ul>
+          </div>
+          <div class="news--title-container">
+            <h1 class="news--title">In the news</h1>
+            <div class="sorting-wraper">
+              <h4 class="title">Sort by years</h4>
+              <div class="custom--select-wrap pure-material-textfield-outlined">
+                <select
+                  class="select-text payment--frequency-dropdown"
+                  id="newsYearsort"
+                  required=""
+                >
+                  <option value="dafault-year" selected="">2023</option>
+                  <option value="2022">2022</option>
+                  <option value="2021">2021</option>
+                  <option value="2020">2020</option>
+                  <option value="2019">2019</option>
+                </select>
+                <!-- <label class="select-label">Select</label> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="news--list-container">
+            <ul class="news--list-wraper">
+              <li class="news--card-wrap dafault-year hidden-value">
+                <div class="news--brand-image margin--bottom-20">
+                  <img
+                    src="assets/financialexpress.svg"
+                    class=""
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <p
+                  class="news--date margin--bottom-20 font--medium font--size-18 color--opacity-5"
+                >
+                  12-11-2023
+                </p>
+                <h3
+                  class="news--heading margin--bottom-20 font--semiBold font--size-24"
+                >
+                  CSR funding getting pro-climate, one small step at a time
+                </h3>
+                <p
+                  class="news--subtitle margin--bottom-20 font--medium font--size-18 text--line-height-20"
+                >
+                  The story focuses on the increasing CSR spending in India in
+                  line with environmental protection. Expenditures on health and
+                  education are complemented by a significant emphasis on the
+                  environment. The Ministry of Corporate Affairs reported a
+                  notable increase in environmental spending to Rs 2,837 crore
+                  in FY22. Companies such as Bisleri, Schneider Electric, Godrej
+                  &amp; Boyce, Voltas, Polycab India, and McCain Foods India are
+                  actively contributing to sustainability. The India
+                  Philanthropy Report 2022 indicates a 54% surge in funding for
+                  environmental and sustainability causes from FY21 to FY22,
+                  underscoring the growing significance of these issues in CSR
+                  activities. However, regional disparities persist in fund
+                  allocation, prompting calls for enhanced effectiveness and
+                  visibility.
+                </p>
+                <a
+                  href="https://www.financialexpress.com/policy/economy-csr-funding-getting-pro-climate-one-small-step-at-a-time-3305109/"
+                  class="btn link"
+                  target="_blank"
+                  >Read More</a
+                >
+              </li>
+              <li class="news--card-wrap dafault-year hidden-value">
+                <div class="news--brand-image margin--bottom-20">
+                  <img
+                    src="assets/fe-leisure.webp"
+                    class=""
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <p
+                  class="news--date margin--bottom-20 font--medium font--size-18 color--opacity-5"
+                >
+                  05-11-2023
+                </p>
+                <h3
+                  class="news--heading margin--bottom-20 font--semiBold font--size-24"
+                >
+                  Sustainable the key ingredient in corporate gifting this
+                  season
+                </h3>
+                <p
+                  class="news--subtitle margin--bottom-20 font--medium font--size-18 text--line-height-20"
+                >
+                  The story focuses on sustainable gifting as the new trend in
+                  the corporate gifting market. Mr. Angelo George, CEO, Bisleri
+                  International mentions that Bisleri is investing in
+                  sustainable merchandise made from recycled PET bottles as
+                  gifts for their partners this year. He also mentions on how
+                  their choice of gifting represents a reflection of Bisleri’s
+                  commitment to the greener promise of a sustainable.
+                </p>
+                <a
+                  href="https://www.financialexpress.com/lifestyle/sustainable-the-key-ingredient-in-corporate-gifting-this-season/3297290/"
+                  class="btn link"
+                  target="_blank"
+                  >Read More</a
+                >
+              </li>
+              <li class="news--card-wrap dafault-year hidden-value">
+                <div class="news--brand-image margin--bottom-20">
+                  <img
+                    src="assets/people-matters.webp"
+                    class=""
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <p
+                  class="news--date margin--bottom-20 font--medium font--size-18 color--opacity-5"
+                >
+                  24-10-2023
+                </p>
+                <h3
+                  class="news--heading margin--bottom-20 font--semiBold font--size-24"
+                >
+                  Bisleri International's strategies for sustainable success: HR
+                  Tech and future-ready workforce
+                </h3>
+                <p
+                  class="news--subtitle margin--bottom-20 font--medium font--size-18 text--line-height-20"
+                >
+                  In the exclusive interaction, Mr. Parag Bengali, Director of
+                  HR and Finance at Bisleri International shared valuable
+                  insights on enabling learning and development strategies for
+                  upskilling employees and cultivating an inclusive work culture
+                  to drive sustainable organisational growth.
+                </p>
+                <a
+                  href="https://www.peoplematters.in/article/training-development/bisleri-internationals-strategies-for-sustainable-success-hr-tech-and-future-ready-workforce-39311"
+                  class="btn link"
+                  target="_blank"
+                  >Read More</a
+                >
+              </li>
+              <li class="news--card-wrap dafault-year hidden-value">
+                <div class="news--brand-image margin--bottom-20">
+                  <img
+                    src="assets/ndtv-logo.webp"
+                    class=""
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <p
+                  class="news--date margin--bottom-20 font--medium font--size-18 color--opacity-5"
+                >
+                  09-10-2023
+                </p>
+                <h3
+                  class="news--heading margin--bottom-20 font--semiBold font--size-24"
+                >
+                  Bisleri Looks To Tap India's Small Yet Fast-Growing Sparkling
+                  Water Market
+                </h3>
+                <p
+                  class="news--subtitle margin--bottom-20 font--medium font--size-18 text--line-height-20"
+                >
+                  In the interaction, Jayanti Khan Chauhan, Vice Chairperson,
+                  Bisleri International sheds light on venturing beyond packaged
+                  water, the strategic focus being on diversifying the product
+                  portfolio, particularly in the carbonated beverage segment and
+                  building premium water category – Vedica Himalayan Spring
+                  Water. She also mentioned how it has been strategically timed
+                  to coincide with the upcoming festive season, as the beverage
+                  is often associated with celebrations and special occasions.
+                  Further, the story also highlights the thoughts of Angelo
+                  George, CEO, on the outlet coverage having increased by 20% in
+                  the top 40 towns, adding that they are further deepening our
+                  presence in districts with higher per capita income and are
+                  tapping the potential of smaller towns to expand their
+                  distribution reach.
+                </p>
+                <a
+                  href="https://www.ndtvprofit.com/business/bisleri-looks-to-tap-indias-small-yet-fast-growing-sparkling-water-market"
+                  class="btn link"
+                  target="_blank"
+                  >Read More</a
+                >
+              </li>
+              <li class="news--card-wrap dafault-year hidden-value">
+                <div class="news--brand-image margin--bottom-20">
+                  <img
+                    src="assets/ETBrandQuality.svg"
+                    class=""
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <p
+                  class="news--date margin--bottom-20 font--medium font--size-18 color--opacity-5"
+                >
+                  07-10-2023
+                </p>
+                <h3
+                  class="news--heading margin--bottom-20 font--semiBold font--size-24"
+                >
+                  Bisleri to boost manufacturing, strategic distribustion
+                  network
+                </h3>
+                <p
+                  class="news--subtitle margin--bottom-20 font--medium font--size-18 text--line-height-20"
+                >
+                  Bisleri International is intensifying its operations with
+                  plans to expand its manufacturing and distribution network to
+                  150 plants from the current 128, emphasizing a strategic focus
+                  on carbonated soft drinks (CSD) and premiumization through
+                  Vedica Himalayan Spring Water. Vedica's recent foray into the
+                  sparkling water segment aligns with Bisleri's goal to become a
+                  key player in this growing niche, projecting Vedica to achieve
+                  ₹100 crore in the next 2-3 years. Despite challenges posed by
+                  the COVID-19 pandemic, Bisleri boasts a robust Compound Annual
+                  Growth Rate (CAGR) of 17% over the last four years, reporting
+                  a revenue of approximately ₹2,300 crore for FY 2022-23.
+                  Vice-Chairperson Jayanti Khan Chauhan underscores the
+                  importance of strategic manufacturing and distribution for
+                  cost-effective market penetration. Bisleri commands a dominant
+                  position, holding over 50% of the branded bottled water
+                  segment in the organized water market, competing with Kinley
+                  and Aquafina.
+                </p>
+                <a
+                  href="https://brandequity.economictimes.indiatimes.com/news/business-of-brands/bisleri-to-boost-manufacturing-strategic-distribution-network/104234572#:~:text=When%20asked%20about%20the%20outlook,manufacturing%20for%20CSD%20for%20Bisleri."
+                  class="btn link"
+                  target="_blank"
+                  >Read More</a
+                >
+              </li>
+              <li class="news--card-wrap dafault-year hidden-value">
+                <div class="news--brand-image margin--bottom-20">
+                  <img
+                    src="assets/theHinduBusinessLine.webp"
+                    class=""
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <p
+                  class="news--date margin--bottom-20 font--medium font--size-18 color--opacity-5"
+                >
+                  05-10-2023
+                </p>
+                <h3
+                  class="news--heading margin--bottom-20 font--semiBold font--size-24"
+                >
+                  Bisleri International forays into sparkling water segment with
+                  Vedica
+                </h3>
+                <p
+                  class="news--subtitle margin--bottom-20 font--medium font--size-18 text--line-height-20"
+                >
+                  In the interaction, Angelo George, Bisleri International's
+                  CEO, shares aims to double sales to Rs 500 crore in three
+                  years, focusing on the premium water and carbonated soft
+                  drinks markets. He also highlighted the strategic emphasis on
+                  the premium mineral water brand, Vedica, and their recent
+                  entry into international markets, starting with Dubai.
+                  Expanding into high-potential markets like Tamil Nadu and
+                  Odisha remains a key part of their growth strategy.
+                </p>
+                <a
+                  href="https://www.thehindubusinessline.com/companies/bisleri-international-forays-in-sparkling-water-segment-with-vedica/article67385030.ece"
+                  class="btn link"
+                  target="_blank"
+                  >Read More</a
+                >
+              </li>
+              <li class="news--card-wrap dafault-year hidden-value">
+                <div class="news--brand-image margin--bottom-20">
+                  <img
+                    src="assets/business-standard-logo.webp"
+                    class=""
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <p
+                  class="news--date margin--bottom-20 font--medium font--size-18 color--opacity-5"
+                >
+                  03-10-2023
+                </p>
+                <h3
+                  class="news--heading margin--bottom-20 font--semiBold font--size-24"
+                >
+                  Want to have lion's share of the premium water segment:
+                  Bisleri Int'l CEO
+                </h3>
+                <p
+                  class="news--subtitle margin--bottom-20 font--medium font--size-18 text--line-height-20"
+                >
+                  In the interaction, Angelo George, Bisleri International's
+                  CEO, shares aims to double sales to Rs 500 crore in three
+                  years, focusing on the premium water and carbonated soft
+                  drinks markets. He also highlighted the strategic emphasis on
+                  the premium mineral water brand, Vedica, and their recent
+                  entry into international markets, starting with Dubai.
+                  Expanding into high-potential markets like Tamil Nadu and
+                  Odisha remains a key part of their growth strategy.
+                </p>
+                <a
+                  href="https://www.business-standard.com/companies/news/want-to-get-a-lion-s-share-of-the-premium-water-segment-bisleri-ceo-123100200831_1.html"
+                  class="btn link"
+                  target="_blank"
+                  >Read More</a
+                >
+              </li>
+              <li class="news--card-wrap dafault-year hidden-value">
+                <div class="news--brand-image margin--bottom-20">
+                  <img
+                    src="assets/hr-logo.svg"
+                    class=""
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <p
+                  class="news--date margin--bottom-20 font--medium font--size-18 color--opacity-5"
+                >
+                  02-10-2023
+                </p>
+                <h3
+                  class="news--heading margin--bottom-20 font--semiBold font--size-24"
+                >
+                  Are cover letters really a differentiator in the age of
+                  ChatGPT?
+                </h3>
+                <p
+                  class="news--subtitle margin--bottom-20 font--medium font--size-18 text--line-height-20"
+                >
+                  The article discusses the changing role of cover letters in
+                  the age of generative AI. It implies that, while AI tools make
+                  it easier to create cover letters, they lack the authenticity
+                  and personal touch that handwritten cover letters provide. The
+                  significance of creating personalized, keyword-rich cover
+                  letters to capture recruiters' attention is emphasized,
+                  emphasizing that a well-crafted statement remains a valuable
+                  differentiator in a competitive job market. According to Parag
+                  Bengali, Director - HR &amp; Finance, Bisleri International,
+                  even if generative AI has undeniably simplified the task of
+                  creating cover letters, it hasn't diminished the significance
+                  of these documents in the eyes of recruiters. “Technology can
+                  aid in the initial drafting, but the essence of a cover letter
+                  goes beyond mere words. Writing a compelling cover letter is a
+                  testament to one's effective communication skills, attention
+                  to detail, and unwavering commitment,” he says.
+                </p>
+                <a
+                  href="https://hr.economictimes.indiatimes.com/news/workplace-4-0/recruitment/are-cover-letters-really-a-differentiator-in-the-age-of-chatgpt/104100343"
+                  class="btn link"
+                  target="_blank"
+                  >Read More</a
+                >
+              </li>
+              <li class="news--card-wrap dafault-year hidden-value">
+                <div class="news--brand-image margin--bottom-20">
+                  <img
+                    src="assets/bt_business_today_logo.webp"
+                    class=""
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <p
+                  class="news--date margin--bottom-20 font--medium font--size-18 color--opacity-5"
+                >
+                  20-09-2023
+                </p>
+                <h3
+                  class="news--heading margin--bottom-20 font--semiBold font--size-24"
+                >
+                  Thirsting for Dominance
+                </h3>
+                <p
+                  class="news--subtitle margin--bottom-20 font--medium font--size-18 text--line-height-20"
+                >
+                  In the interaction, Jayanti Ramesh Chauhan, Vice Chairperson,
+                  Bisleri International sheds light on the journey of the
+                  business adding how being the first player in the packaged
+                  drinking water business has allowed Bisleri to set up the
+                  ecosystem from the scratch. She has also mentioned how company
+                  is now planning to move into neighbouring markets to make a
+                  fresh foray into the soft drinks business and fire up the
+                  non-water business. Further the story also highlights the
+                  thoughts of Angelo George, CEO on South India being the
+                  largest market for the business, adding that their target
+                  market are the 8,000 towns in India and not the 6,00,000
+                  villages.
+                </p>
+                <a
+                  href="https://www.businesstoday.in/interactive/photo-essay/bisleris-thirst-for-dominance-how-jayanti-chauhan-is-propelling-the-brand-to-greater-heights-110-28-09-2023"
+                  class="btn link"
+                  target="_blank"
+                  >Read More</a
+                >
+              </li>
+              <li class="news--card-wrap dafault-year hidden-value">
+                <div class="news--brand-image margin--bottom-20">
+                  <img
+                    src="assets/theHinduBusinessLine.webp"
+                    class=""
+                    alt=""
+                    loading="lazy"
+                  />
+                </div>
+                <p
+                  class="news--date margin--bottom-20 font--medium font--size-18 color--opacity-5"
+                >
+                  31-08-2023
+                </p>
+                <h3
+                  class="news--heading margin--bottom-20 font--semiBold font--size-24"
+                >
+                  ‘Credit’ to water savers
+                </h3>
+                <p
+                  class="news--subtitle margin--bottom-20 font--medium font--size-18 text--line-height-20"
+                >
+                  The authored article by Angelo George focuses on the
+                  significant groundwater depletion that is being faced by India
+                  due to excessive usage in agriculture, industry, and
+                  households. The country's water issues are compounded by
+                  water-intensive crops, inefficient irrigation, and pollution.
+                  To tackle this, India is exploring the concept of "water green
+                  credits" as a market-driven solution for responsible water
+                  use. Entities consuming water must optimize consumption and
+                  restore what they use. Shortcomings can be compensated by
+                  purchasing credits. This approach extends to agriculture,
+                  industry, and domestic use, encouraging efficiency and
+                  conservation. Collaboration between stakeholders is vital for
+                  the success of this innovative water management strategy.
+                </p>
+                <a
+                  href="https://www.thehindubusinessline.com/opinion/credit-to-water-savers/article67252921.ece"
+                  class="btn link"
+                  target="_blank"
+                  >Read More</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+    <button class="scrollToTop" style="display: inline-block">
+      <i class="bs--up-arrow"></i>
+    </button>
+    <!-- Common Code Start (Footer & Go to Up & Expert Chat) -->
+    <button class="backtoup" type="button" title="top"></button>
+
+    <div class="help-btn">
+        <button type="button" title="chat with expert">Chat with Expert</button>
+    </div>
+
+    <footer>
+        <div class="footer-cont">
+            <div class="pay-app">
+                <div class="pay">
+                    <h4>Secure Payments</h4>
+                    <ul>
+                        <li><img src="assets/visa.jpg" alt=""></li>
+                        <li><img src="assets/mastercard.jpg" alt=""></li>
+                        <li><img src="assets/paytm.jpg" alt=""></li>
+                        <li><img src="assets/maestro.jpg" alt=""></li>
+                        <li><img src="assets/norton.webp" alt=""></li>
+                        <li><img src="assets/mcafee.webp" alt=""></li>
+                    </ul>
+                </div>
+                <div class="apps">
+                    <h4>Our Apps:</h4>
+                    <ul>
+                        <li><img class="bisleri-bottles" src="assets/bisleri-bottles.webp" alt=""></li>
+                        <li><img class="android-btn" src="assets/android-btn.webp" alt=""></li>
+                        <li><img class="appstore-btn" src="assets/appstore-btn.webp" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lists">
+                <div>
+                    <ul>
+                        <li>About Us</li>
+                        <li><a href="https://www.bisleri.com/our-journey">Our Journey</a></li>
+                        <li><a href="https://www.bisleri.com/what-makes-us-stand-apart">What makes us Stand Apart</a></li>
+                        <li><a href="https://www.bisleri.com/90-quality-tests">90 Quality Tests</a></li>
+                        <li><a href="https://www.bisleri.com/promise-of-10">The Promise of 10</a></li>
+                        <li><a href="https://www.bisleri.com/vision-mission-values">Vision, Mission & Values</a></li>
+                        <li><a href="https://www.bisleri.com/team">Leadership Team</a></li>
+                        <li><a href="https://www.bisleri.com/career">Careers</a></li>
+                        <li><a href="https://www.bisleri.com/contact-us">Contact Us</a></li>
+                        <li><a href="https://www.bisleri.com/terms-conditions">Terms & Conditions</a></li>
+                        <li><a href="https://www.bisleri.com/cancel-refund-policy">Cancelation & Refund Policy</a></li>
+                        <li><a href="https://www.bisleri.com/faq">FAQs</a></li>
+                        <li><a href="https://www.bisleri.com/annual-return">Annual Return</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>Brands</li>
+                        <li><a href="https://www.bisleri.com/bisleri-packaged-drinking-water">Bisleri</a></li>
+                        <li><a href="https://www.bisleri.com/vedica">Vedica</a></li>
+                        <li><a href="https://www.bisleri.com/limonata">Limonata</a></li>
+                        <li><a href="https://www.bisleri.com/bisleri-soda">Bisleri Soda</a></li>
+                        <li><a href="https://www.bisleri.com/pop">Pop</a></li>
+                    </ul>
+                    <ul>
+                        <li>News Room</li>
+                        <li><a href="https://www.bisleri.com/press-release">Press Release</a></li>
+                        <li><a href="https://www.bisleri.com/news">News</a></li>
+                        <li><a href="https://www.bisleri.com/blogs">Blogs</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="https://www.bisleri.com/uae"><b>UAE</b></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>Become a Distributor</li>
+                        <li><a href="https://www.bisleri.com/distributor">Apply for Bisleri Dealership</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="https://www.bisleri.com/greenerPromise"><b>Greener Promise</b></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>Contact</li>
+                        <li>Bisleri International Pvt. Ltd.<br><br>
+                            CTS No. 525/1A/1, Western Express <br><br>
+                            Highway,<br><br>
+                            Opp Hindustan Unilever, at Chakala <br><br>
+                            Division,<br><br>
+                            Andheri (East), Mumbai – 400 099</li>
+                    </ul>
+                    <ul>
+                        <li class="email"><b>Email:</b> <a href="mailto:wecare@bisleri.co.in">wecare@bisleri.co.in</a>
+                        </li>
+                        <li class="phone">Phone: <a href="tel:18001211007">1800-121-1007</a></li>
+                        <li class="time">8 AM to 8 PM</li>
+                        <li class="days">Monday to Saturday</li>
+                    </ul>
+                    <ul class="social-links">
+                        <li><a class="facebook" href="https://www.facebook.com/Bisleri/"></a></li>
+                        <li><a class="twitter" href="https://twitter.com/BisleriZone"></a></li>
+                        <li><a class="instagram" href="https://www.instagram.com/bislerizone/"></a></li>
+                        <li><a class="youtube" href="https://www.youtube.com/user/BisleriIndia"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright">
+                <div class="copyright-text">
+                    <p>© COPYRIGHTS 2020-21</p>
+                </div>
+                <div class="base-links">
+                    <a href="https://payments.billdesk.com/MercOnline/BisleriController" title="Online Payment">Online
+                        Payment</a>
+                    <a href="https://www.bisleri.com/compliance" title="Compliance">Compliance</a>
+                    <a href="https://www.bisleri.com/privacy-policy" title="Privacy Policy">Privacy Policy</a>
+                    <a href="https://www.bisleri.com/cookies-policy" title="Cookie Policy">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="show-480px-770px">
+        <div class="show-480px-770px-cont">
+            <div class="rotating_image">
+                <img src="https://www.bisleri.com/images/rotate.webp" alt="rotate" loading="lazy">
+            </div>
+            <div class="landscape_text">
+                <h3>Please rotate your device</h3>
+                <p>We do not support landscape mode, <br>please use the website in the portrait mode for best experience.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Common Code End (Footer & Go to Up & Expert Chat) -->
+  </body>
+</html>
