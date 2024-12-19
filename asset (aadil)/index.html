@@ -7,7 +7,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="https://www.bisleri.com/images/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -16,14 +15,15 @@
 
 <body>
 
+    <!-- Common Code Start (Header) -->
     <div id="loader">
-        <img src="assets/loader.gif" alt="Loading...">
+        <img src="asset/loader.gif" alt="Loading...">
     </div>
 
     <div class="app-ad">
         <div class="app-ad-wrap">
             <i onclick="hideAppAd()"></i>
-            <a href="../asset (aadil)/index.html"><img src="https://www.bisleri.com/images/bisleri-icon.webp" alt="Bisleri"></a>
+            <a href="index.html"><img src="https://www.bisleri.com/images/bisleri-icon.webp" alt="Bisleri"></a>
             <h4>Value Deals on Bisleri app</h4>
         </div>
         <span class="use-app-link">
@@ -67,7 +67,7 @@
                 <li>Visakhapatnam</li>
             </ul>
             <div class="header-info">
-                <a href="tel:1800 121 1007"><span class="phone"></span><span>1800 121 1007</span></a>
+                <a href="tel:1800 121 1007"><span class="phone-call"></span><span>1800 121 1007</span></a>
                 <a href="mailto:wecare@bisleri.co.in"><span class="email"></span><span>wecare@bisleri.co.in</span></a>
             </div>
         </div>
@@ -75,13 +75,13 @@
             <div class="header-left">
                 <div class="logo">
                     <input class="menu" type="button" title="menu" onclick="renderPhoneMenu()">
-                    <a href="../asset (aadil)/index.html">
+                    <a href="index.html">
                         <img src="https://www.bisleri.com/images/logo.webp" alt="Bisleri">
                     </a>
                 </div>
                 <nav>
                     <ul>
-                        <li><a class="active" href="">Home</a></li>
+                        <li><a class="active" href="index.html">Home</a></li>
                         <li class="expend greener-promise"><a href="">Greener Promise</a>
                         <div class="greener-drop-down">
                             <a href="https://www.bisleri.com/greenerPromise">Bisleri Greener Promise</a>
@@ -96,10 +96,10 @@
                                         <a href="https://www.bisleri.com/rainwater-harvesting">Nayi Umeed</a>
                                     </li>
                                     <li>
-                                        <a class="font--size-16 font-family1 font--bold" href="https://www.bisleri.com/pdf/csr-policy.pdf" target="_blank" rel="noopener">CSR Policy</a>
+                                        <a href="https://www.bisleri.com/pdf/csr-policy.pdf" rel="noopener">CSR Policy</a>
                                     </li>
                                     <li>
-                                        <a class="font--size-16 font-family1 font--bold" href="https://www.bisleri.com/csr-annual-return" target="_blank" rel="noopener">CSR Annual Return</a>
+                                        <a href="https://www.bisleri.com/csr-annual-return" rel="noopener">CSR Annual Return</a>
                                     </li>
                                 </ul>
                             </div>
@@ -247,6 +247,8 @@
         </div>
         <div class="close-menu-div"><button class="close-menu" title="close-menu" onclick="hidePhoneMenu()"></button></div>
     </div>
+    <!-- Common Code End (Header) -->
+
 
     <div class="sliding-text-container">
         <div class="sliding-text">
@@ -262,13 +264,13 @@
     <div class="banner-container" id="banner-container">
         <div class='banners' id='banners'>
             <div class='banner'>
-                <img src='assets/bisleri-banner-home.webp' alt='Bisleri Banner' id='banner1'>
+                <img src='asset/bisleri-banner-home.webp' alt='Bisleri Banner' id='banner1'>
             </div>
             <div class='banner'>
-                <img src='assets/vedica-banner.webp' alt='Fizz Banner' id='banner2'>
+                <img src='asset/vedica-banner.webp' alt='Fizz Banner' id='banner2'>
             </div>
             <div class='banner'>
-                <img src='assets/fizz-banner.webp' alt='Vedica Banner' id='banner3'>
+                <img src='asset/fizz-banner.webp' alt='Vedica Banner' id='banner3'>
             </div>
         </div>
         <div class='buttons'>
@@ -325,7 +327,7 @@
                                 <a href="https://www.bisleri.com/product-listing/bisleri">Learn More</a>
                             </div>
                             <div class="svg">
-                                <img src="assets/bisleri-water.svg" alt="">
+                                <img src="./asset/bisleri-water.svg" alt="">
                             </div>
                         </div>
                     </div>
@@ -415,7 +417,7 @@
                                 <a href="https://www.bisleri.com/product-listing/fizzy-drinks">Shop Products</a>
                             </div>
                             <div class="svg">
-                                <img src="assets/fizzy-drinks.svg" alt="">
+                                <img src="./asset/fizzy-drinks.svg" alt="">
                             </div>
                         </div>
                     </div>
@@ -694,6 +696,8 @@
         </section>
     </div>
 
+
+    <!-- Common Code Start (Footer & Go to Up & Expert Chat) -->
     <button class="backtoup" type="button" title="top"></button>
 
     <div class="help-btn">
@@ -706,20 +710,20 @@
                 <div class="pay">
                     <h4>Secure Payments</h4>
                     <ul>
-                        <li><img src="assets/visa.jpg" alt=""></li>
-                        <li><img src="assets/mastercard.jpg" alt=""></li>
-                        <li><img src="assets/paytm.jpg" alt=""></li>
-                        <li><img src="assets/maestro.jpg" alt=""></li>
-                        <li><img src="assets/norton.webp" alt=""></li>
-                        <li><img src="assets/mcafee.webp" alt=""></li>
+                        <li><img src="asset/visa.jpg" alt=""></li>
+                        <li><img src="asset/mastercard.jpg" alt=""></li>
+                        <li><img src="asset/paytm.jpg" alt=""></li>
+                        <li><img src="asset/maestro.jpg" alt=""></li>
+                        <li><img src="asset/norton.webp" alt=""></li>
+                        <li><img src="asset/mcafee.webp" alt=""></li>
                     </ul>
                 </div>
                 <div class="apps">
                     <h4>Our Apps:</h4>
                     <ul>
-                        <li><img class="bisleri-bottles" src="assets/bisleri-bottles.webp" alt=""></li>
-                        <li><img class="android-btn" src="assets/android-btn.webp" alt=""></li>
-                        <li><img class="appstore-btn" src="assets/appstore-btn.webp" alt=""></li>
+                        <li><img class="bisleri-bottles" src="asset/bisleri-bottles.webp" alt=""></li>
+                        <li><img class="android-btn" src="asset/android-btn.webp" alt=""></li>
+                        <li><img class="appstore-btn" src="asset/appstore-btn.webp" alt=""></li>
                     </ul>
                 </div>
             </div>
@@ -787,10 +791,10 @@
                         <li class="days">Monday to Saturday</li>
                     </ul>
                     <ul class="social-links">
-                        <li><a class="facebook" href="https://www.facebook.com/Bisleri/"></a></li>
-                        <li><a class="twitter" href="https://twitter.com/BisleriZone"></a></li>
-                        <li><a class="instagram" href="https://www.instagram.com/bislerizone/"></a></li>
-                        <li><a class="youtube" href="https://www.youtube.com/user/BisleriIndia"></a></li>
+                        <li><a title="facebook" class="facebook" href="https://www.facebook.com/Bisleri/"></a></li>
+                        <li><a title="twitter" class="twitter" href="https://twitter.com/BisleriZone"></a></li>
+                        <li><a title="instagram" class="instagram" href="https://www.instagram.com/bislerizone/"></a></li>
+                        <li><a title="youtube" class="youtube" href="https://www.youtube.com/user/BisleriIndia"></a></li>
                     </ul>
                 </div>
             </div>
@@ -821,7 +825,7 @@
             </div>
         </div>
     </div>
-            
+    <!-- Common Code End (Footer & Go to Up & Expert Chat) -->
 </body>
-<!-- <script src="index.js"></script> -->
+<script src="index.js"></script>
 </html>

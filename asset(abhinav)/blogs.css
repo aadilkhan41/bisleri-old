@@ -73,11 +73,13 @@ header{
 }
 
 .header-loc .down{
-    background-image: url("asset/down.svg");
+    /* background-image: url("asset/down.svg"); */
+    background-image: url("../asset\ \(aadil\)/asset/down.svg");
 }
 
 .header-loc .up{
-    background-image: url("asset/up.svg");
+    /* background-image: url("asset/up.svg"); */
+    background-image: url("../asset\ \(aadil\)/asset/up.svg");
 }
 
 .header-loc button{
@@ -143,7 +145,8 @@ header{
     width: 17px;
     height: 17px;
     margin-right: 10px;
-    background-image: url("asset/phone.jpg");
+    /* background-image: url("asset/phone.jpg"); */
+    background-image: url("../asset\ \(aadil\)/asset/phone.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -153,7 +156,8 @@ header{
     width: 17px;
     height: 17px;
     margin-right: 10px;
-    background-image: url("asset/email.jpg");
+    /* background-image: url("asset/email.jpg"); */
+    background-image: url("../asset\ \(aadil\)/asset/email.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -193,7 +197,8 @@ nav > ul > li{
 
 nav .expend{
     padding-right: 14px;
-    background-image: url("asset/down.svg");
+    /* background-image: url("asset/down.svg"); */
+    background-image: url("../asset\ \(aadil\)/asset/down.svg");
     background-position: right 11px;
     background-repeat: no-repeat;
     background-size: 20px 20px;
@@ -355,7 +360,8 @@ nav li a{
 }
 
 .header-right .search{
-    background-image: url("asset/search.svg");
+    /* background-image: url("assets/search.svg"); */
+    background-image: url("../asset\ \(aadil\)/asset/search.svg");
 }
 
 .search-bar-panel{
@@ -383,7 +389,8 @@ nav li a{
     color: #333333;
     padding: 2px 0 2px 35px;
     background-color: white;
-    background-image: url("asset/close.svg");
+    /* background-image: url("assets/close.svg"); */
+    background-image: url("../asset\ \(aadil\)/asset/close.svg");
     background-position: 0px center;
     background-repeat: no-repeat;
     background-size: 24px 24px;
@@ -475,7 +482,8 @@ nav li a{
 }
 
 .header-right .login{
-    background-image: url("asset/user.svg");
+    /* background-image: url("assets/user.svg"); */
+    background-image: url("../asset\ \(aadil\)/asset/user.svg");
     background-size: 21px 21px;
 }
 
@@ -516,7 +524,8 @@ nav li a{
 }
 
 .header-right .cart{
-    background-image: url("asset/cart.svg");
+    /* background-image: url("assets/cart.svg"); */
+    background-image: url("../asset\ \(aadil\)/asset/cart.svg");
     background-size: 20px 20px;
 }
 
@@ -566,7 +575,8 @@ header .header-right span{
     display: none;
     outline: none;
     background-color: #00645b;
-    background-image: url("asset/white-up.svg");
+    /* background-image: url("assets/white-up.svg"); */
+    background-image: url("../asset\ \(aadil\)/asset/white-up.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 28px 28px;
@@ -603,7 +613,8 @@ html {
     padding: 17px 12px 17px 40px;
     box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.5);
     background-color: #00b2a2;
-    background-image: url("asset/help-chat.jpg");
+    /* background-image: url("assets/help-chat.jpg"); */
+    background-image: url("../asset\ \(aadil\)/asset/help-chat.jpg");
     background-position: 12px center;
     background-repeat: no-repeat;
     background-size: 18px 18px;
@@ -756,19 +767,23 @@ footer{
 }
 
 .social-links .facebook{
-    background-image: url("./asset/facebook.jpg");
+    /* background-image: url("./assets/facebook.jpg"); */
+    background-image: url("../asset\ \(aadil\)/asset/facebook.jpg");
 }
 
 .social-links .twitter{
-    background-image: url("./asset/x.jpg");
+    /* background-image: url("./assets/x.jpg"); */
+    background-image: url("../asset\ \(aadil\)/asset/x.jpg");
 }
 
 .social-links .instagram{
-    background-image: url("./asset/insta.jpg");
+    /* background-image: url("./assets/insta.jpg"); */
+    background-image: url("../asset\ \(aadil\)/asset/insta.jpg");
 }
 
 .social-links .youtube{
-    background-image: url("./asset/youtube.jpg");
+    /* background-image: url("./assets/youtube.jpg"); */
+    background-image: url("../asset\ \(aadil\)/asset/youtube.jpg");
 }
 
 .copyright{
@@ -1578,11 +1593,13 @@ header{
 }
 
 .header-loc .down{
-    background-image: url("asset/down.svg");
+    /* background-image: url("assets/down.svg"); */
+    background-image: url("../asset\ \(aadil\)/asset/down.svg");
 }
 
 .header-loc .up{
-    background-image: url("asset/up.svg");
+    /* background-image: url("assets/up.svg"); */
+    background-image: url("../asset\ \(aadil\)/asset/up.svg");
 }
 
 .header-loc button{
@@ -1648,7 +1665,8 @@ header{
     width: 17px;
     height: 17px;
     margin-right: 10px;
-    background-image: url("asset/phone.jpg");
+    /* background-image: url("assets/phone.jpg"); */
+    background-image: url("../asset\ \(aadil\)/asset/phone.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1658,7 +1676,8 @@ header{
     width: 17px;
     height: 17px;
     margin-right: 10px;
-    background-image: url("asset/email.jpg");
+    /* background-image: url("assets/email.jpg"); */
+    background-image: url("../asset\ \(aadil\)/asset/email.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1698,7 +1717,8 @@ nav > ul > li{
 
 nav .expend{
     padding-right: 14px;
-    background-image: url("asset/down.svg");
+    /* background-image: url("asset/down.svg"); */
+    background-image: url("../asset\ \(aadil\)/asset/down.svg");
     background-position: right 11px;
     background-repeat: no-repeat;
     background-size: 20px 20px;
@@ -1862,7 +1882,7 @@ nav li a{
 }
 
 .header-right .search{
-    background-image: url("asset/search.svg");
+    background-image: url("../asset\ \(aadil\)/asset/search.svg");
 }
 
 .search-bar-panel{
@@ -1890,7 +1910,8 @@ nav li a{
     color: #333333;
     padding: 2px 0 2px 35px;
     background-color: white;
-    background-image: url("asset/close.svg");
+    /* background-image: url("asset/close.svg"); */
+    background-image: url("../asset\ \(aadil\)/asset/close.svg");
     background-position: 0px center;
     background-repeat: no-repeat;
     background-size: 24px 24px;
@@ -1984,7 +2005,7 @@ nav li a{
 }
 
 .header-right .login{
-    background-image: url("asset/user.svg");
+    background-image: url("../asset\ \(aadil\)/asset/user.svg");
     background-size: 21px 21px;
 }
 
@@ -2025,7 +2046,8 @@ nav li a{
 }
 
 .header-right .cart{
-    background-image: url("asset/cart.svg");
+    /* background-image: url("asset/cart.svg"); */
+    background-image: url("../asset\ \(aadil\)/asset/cart.svg");
     background-size: 20px 20px;
 }
 
@@ -2075,7 +2097,8 @@ header .header-right span{
     display: none;
     outline: none;
     background-color: #00645b;
-    background-image: url("asset/white-up.svg");
+    /* background-image: url("asset/white-up.svg"); */
+    background-image: url("../asset\ \(aadil\)/asset/white-up.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 28px 28px;
@@ -2112,7 +2135,8 @@ html {
     padding: 17px 12px 17px 40px;
     box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.5);
     background-color: #00b2a2;
-    background-image: url("asset/help-chat.jpg");
+    /* background-image: url("asset/help-chat.jpg"); */
+    background-image: url("../asset\ \(aadil\)/asset/help-chat.jpg");
     background-position: 12px center;
     background-repeat: no-repeat;
     background-size: 18px 18px;
@@ -2265,19 +2289,23 @@ footer{
 }
 
 .social-links .facebook{
-    background-image: url("./asset/facebook.jpg");
+    /* background-image: url("./asset/facebook.jpg"); */
+    background-image: url("../asset\ \(aadil\)/asset/facebook.jpg");
 }
 
 .social-links .twitter{
-    background-image: url("./asset/x.jpg");
+    /* background-image: url("./asset/x.jpg"); */
+    background-image: url("../asset\ \(aadil\)/asset/x.jpg");
 }
 
 .social-links .instagram{
-    background-image: url("./asset/insta.jpg");
+    /* background-image: url("./asset/insta.jpg"); */
+    background-image: url("../asset\ \(aadil\)/asset/insta.jpg");
 }
 
 .social-links .youtube{
-    background-image: url("./asset/youtube.jpg");
+    /* background-image: url("./asset/youtube.jpg"); */
+    background-image: url("../asset\ \(aadil\)/asset/youtube.jpg");
 }
 
 .copyright{
