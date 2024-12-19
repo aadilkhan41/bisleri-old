@@ -32,10 +32,6 @@ body{
     height: auto;
 }
 
-
-
-
-
 .app-ad{
     display: none;
 }
@@ -152,7 +148,7 @@ header{
     margin: 0 20px 0 0;
 }
 
-.header-info .phone{
+.header-info .phone-call{
     width: 17px;
     height: 17px;
     margin-right: 10px;
@@ -561,7 +557,7 @@ header .header-right span{
     }
 
     header{
-        padding-bottom: 20px;
+        padding-bottom: 15px;
     }
 }
 
@@ -585,8 +581,6 @@ header .header-right span{
 
 .sliding-text-container {
     width: 100%;
-    z-index: -1;
-    position: relative;
     overflow: hidden;
     background-color: #c1d8de;
     border: 1px solid white;
@@ -1148,6 +1142,10 @@ html {
 .stat-wrapper .btn-link{
     margin-right: 30px;
 }
+
+
+
+
 
 @media screen and (max-width: 1440px) {
     .content p{
@@ -1839,28 +1837,6 @@ footer{
         background-size: 18px 18px !important;
     }
 
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
     .search-bar-panel{
         display: none;
         padding: 50px 0;
@@ -1914,16 +1890,6 @@ footer{
         margin-bottom: 15px;
         font-size: 10px;
     }
-
-
-
-
-
-
-
-
-
-
 
     .phone-menu{
         width: 0%;
@@ -2128,17 +2094,6 @@ footer{
         font-size: 16px;
     }
 
-
-
-
-
-
-
-
-
-
-
-
     .bottom-png{
         width: 230px;
         right: 0;
@@ -2151,15 +2106,6 @@ footer{
         position: relative;
     }
     
-
-
-
-
-
-
-
-
-
     .banners {
         flex-direction: row;
         overflow-x: auto;

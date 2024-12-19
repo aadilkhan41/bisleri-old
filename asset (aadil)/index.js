@@ -1,3 +1,8 @@
+window.addEventListener("load", function () {
+    const loader = document.getElementById("loader");
+    loader.style.display = "none";
+});
+
 function renderPhoneMenu(){
     document.querySelector(".phone-menu").style.left = "0";
     document.querySelector(".phone-menu").style.width = "100%";
@@ -16,10 +21,6 @@ function hideSubMenu(className){
     document.querySelector("."+className).style.display = "none";
 }
 
-
-
-
-
 function emptyCart(){
     document.querySelector('.empty-cart-msg').style.top = "135px";
 
@@ -28,12 +29,79 @@ function emptyCart(){
     }, 1000);
 }
 
-
-
 function hideAppAd(){
     document.querySelector(".app-ad").style.display = "none";
     document.querySelector("header").style.top = "0px";
 }
+
+const toggleButton = document.querySelector(".down");
+const dropdownMenu = document.querySelector(".drop-down");
+const headerLoc = document.querySelector(".header-loc");
+
+toggleButton.addEventListener("click", () => {
+    if (dropdownMenu.style.display === "block") {
+        dropdownMenu.style.display = "none";
+        toggleButton.classList.remove("up");
+        toggleButton.classList.add("down");
+    } else {
+        dropdownMenu.style.display = "block";
+        toggleButton.classList.remove("down");
+        toggleButton.classList.add("up");
+    }
+});
+
+dropdownMenu.addEventListener("click", (event) => {
+    if (event.target.tagName === "LI") {
+        toggleButton.textContent = event.target.textContent;
+        dropdownMenu.style.display = "none";
+        toggleButton.classList.remove("up");
+        toggleButton.classList.add("down");
+    }
+});
+
+document.addEventListener("click", (event) => {
+    if (!headerLoc.contains(event.target)) {
+        dropdownMenu.style.display = "none";
+        toggleButton.classList.remove("up");
+        toggleButton.classList.add("down");
+    }
+});
+
+function renderSearchBar(){
+    document.querySelector(".search-bar-panel").style.display = "flex";
+}
+
+function hideSearchBar(){
+    document.querySelector(".search-bar-panel").style.display = "none";
+}
+
+const backToTopButton = document.querySelector(".backtoup");
+
+window.onscroll = () => {
+    if (document.documentElement.scrollTop > 300 || document.body.scrollTop > 300) {
+        backToTopButton.style.display = "block";
+    } else {
+        backToTopButton.style.display = "none";
+    }
+};
+
+backToTopButton.onclick = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+};
+
+
+
+
+
+
+
+
+
+
+
 
 function renderwater(id){
     let obj1 = document.querySelector(".bisleri-water-panel");
@@ -58,15 +126,6 @@ function renderwater(id){
         obj3.style.display = "flex";
     }
 }
-
-window.addEventListener("load", function () {
-    const loader = document.getElementById("loader");
-    loader.style.display = "none";
-});
-
-
-
-
 
 let bannerHeight = 0;
 adjustBannerHeights();
@@ -112,76 +171,3 @@ window.onload = function() {
 window.onresize = function() {
     adjustBannerHeights();
 };
-
-
-
-
-
-
-
-
-
-// Get the button
-const backToTopButton = document.querySelector(".backtoup");
-
-// Show button when user scrolls down 300px
-window.onscroll = () => {
-    if (document.documentElement.scrollTop > 300 || document.body.scrollTop > 300) {
-        backToTopButton.style.display = "block";
-    } else {
-        backToTopButton.style.display = "none";
-    }
-};
-
-// Scroll to top when button is clicked
-backToTopButton.onclick = () => {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-};
-
-// Select Elements
-const toggleButton = document.querySelector(".down"); // Default state: down
-const dropdownMenu = document.querySelector(".drop-down");
-const headerLoc = document.querySelector(".header-loc");
-
-// Toggle Dropdown Visibility and Class
-toggleButton.addEventListener("click", () => {
-    if (dropdownMenu.style.display === "block") {
-        dropdownMenu.style.display = "none"; // Hide dropdown
-        toggleButton.classList.remove("up");
-        toggleButton.classList.add("down"); // Reset class
-    } else {
-        dropdownMenu.style.display = "block"; // Show dropdown
-        toggleButton.classList.remove("down");
-        toggleButton.classList.add("up"); // Change class
-    }
-});
-
-// Replace Text on List Click
-dropdownMenu.addEventListener("click", (event) => {
-    if (event.target.tagName === "LI") {
-        toggleButton.textContent = event.target.textContent; // Replace text
-        dropdownMenu.style.display = "none"; // Hide dropdown
-        toggleButton.classList.remove("up");
-        toggleButton.classList.add("down"); // Set class back to 'down'
-    }
-});
-
-// Hide Dropdown on Outside Click
-document.addEventListener("click", (event) => {
-    if (!headerLoc.contains(event.target)) {
-        dropdownMenu.style.display = "none";
-        toggleButton.classList.remove("up");
-        toggleButton.classList.add("down");
-    }
-});
-
-function renderSearchBar(){
-    document.querySelector(".search-bar-panel").style.display = "flex";
-}
-
-function hideSearchBar(){
-    document.querySelector(".search-bar-panel").style.display = "none";
-}
